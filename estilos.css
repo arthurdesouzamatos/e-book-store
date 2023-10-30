@@ -33,6 +33,14 @@ h1{
     background-color: #a9c9ba;
 }
 
+.livros-contetor {
+    display: grid;
+    margin-left: 150px;
+    grid-template-columns: 25% 25%;
+    grid-row-gap: 50px;
+    grid-column-gap: 250px;
+}
+
 .livro-cartao {
     margin: 10px;
     width: 600px;
@@ -56,12 +64,8 @@ h1{
 
 .titulo-com-descricao {
     width: 200px;
-    height: 280px;
+    height: 260px;
 
-}
-
-.livro-titulo {
-    
 }
 
 .livro-info {

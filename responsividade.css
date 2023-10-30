@@ -18,7 +18,7 @@
         width: 1400px;
         height: 350px;
     }
-    
+
 
 
     .livro-page-individual {
@@ -33,10 +33,34 @@
         width: 400px;
         height: 400px;
     }
-    
+
     .titulo-sobre {
         margin-left: 300px;
     }
-    
+
+    @media (max-width: 1366px) {
+        .livros-contetor {
+            display: grid;
+            margin-left: 150px;
+            grid-template-columns: 20% 20%;
+            grid-row-gap: 30px;
+            grid-column-gap: 150px;
+        }
+        
+        .livro-cartao {
+            width: 600px;
+            height: 500px;
+        }
+
+        .livro-imagem {
+            width: 250px;
+            height: 300px;
+        }
+
+        .livro-descricao {
+
+        }
+    }
+
 
 }

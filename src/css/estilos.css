@@ -38,8 +38,10 @@ body{
 
 
 h1{
-    width: 1250px;
-    margin-left: 160px;
+    width: 1295px;
+    margin-left: 150px;
+    border-top: 5px solid var(--cor-das-bordas);
+    border-left: 8px solid var(--cor-das-bordas);
     background: var(--cor-fundo-titulo);
     background-color: var(--cor-da-fonte) ;
 }

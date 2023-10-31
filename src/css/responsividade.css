@@ -1,0 +1,90 @@
+@media (max-width: 1500px) {
+    .produtos-container {
+        width: 1300px;
+        margin-left: 25px;
+    }
+
+    .imagens-livro {
+        width: 230px;
+        height: 280px;
+    }
+
+    .descricao-produto {
+        width: 215px;
+        height: 280px;
+    }
+
+    .imagem-banner {
+        width: 1400px;
+        height: 350px;
+    }
+
+
+
+    .livro-page-individual {
+        margin-top: 20px;
+        margin-left: 300px;
+        width: 280px;
+        height: 350px;
+    }
+
+    .texto-page-individual {
+        margin-left: 300px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .titulo-sobre {
+        margin-left: 300px;
+    }
+
+    @media (max-width: 1366px) {
+        .livros-contetor {
+            display: grid;
+            margin-left: 150px;
+            grid-template-columns: 35% 35%;
+            grid-row-gap: 30px;
+            grid-column-gap: 150px;
+        }
+        
+        .livro-cartao {
+            width: 550px;
+            height: 303px;
+            margin-left: -20px;
+        }
+
+        .livro-imagem {
+            width: 250px;
+            height: 300px;
+        }
+
+        .livro-descricao {
+            font-size: small
+        }
+
+        .livro-descricao {
+            margin-left: -10px;
+        }
+
+        .livro-titulo {
+            text-align: center;
+        }
+
+        .livro-info{
+            margin-top: -75px;
+        }
+
+        .apresentacao-livro {
+            grid-template-columns: 700px 400px;
+
+        }
+
+        .descricao-page-individual {
+            margin-left: -5px;
+
+        }
+
+    }
+
+
+}

@@ -42,14 +42,15 @@
         .livros-contetor {
             display: grid;
             margin-left: 150px;
-            grid-template-columns: 20% 20%;
+            grid-template-columns: 35% 35%;
             grid-row-gap: 30px;
             grid-column-gap: 150px;
         }
         
         .livro-cartao {
-            width: 600px;
-            height: 500px;
+            width: 550px;
+            height: 303px;
+            margin-left: -20px;
         }
 
         .livro-imagem {
@@ -58,8 +59,30 @@
         }
 
         .livro-descricao {
+            font-size: small
+        }
+
+        .livro-descricao {
+            margin-left: -10px;
+        }
+
+        .livro-titulo {
+            text-align: center;
+        }
+
+        .livro-info{
+            margin-top: -75px;
+        }
+
+        .apresentacao-livro {
+            grid-template-columns: 700px 400px;
 
         }
+
+        .descricao-page-individual {
+            margin-left: -5px;
+        }
+
     }
 
 

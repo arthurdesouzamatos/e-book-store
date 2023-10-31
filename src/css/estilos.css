@@ -4,9 +4,27 @@
 @import url("responsividade.css");
 
 :root {
-    --cor-do-fundo: #74B5C2;
-    --cor-dos-cartoes: #2EF55E;
-    --cor-das-bordas: #548F62;
+    --cor-sort-1:#74B5C2;
+    --cor-sort-2: #2EF55E;
+    --cor-sort-3: #2EF55E;
+
+    --cor-azul-dark-1: #1F6E8C;
+    --cor-azul-dark-2: #2E8A99;
+    --cor-azul-dark-3: #84A7A1;
+    --cor-azul-dark-4: #0E2954;
+    --cor-azul-dark-5: #84A7A1;
+
+    --night-blue-1: #C2D9FF;
+    --night-blue-2: #8E8FFA;
+    --night-blue-3: #7752FE;
+    --night-blue-4: #190482;
+
+    --cor-do-fundo: var(--night-blue-1);
+    --cor-dos-cartoes: var(--night-blue-2) ;
+    --cor-das-bordas: var(--night-blue-3);
+    --cor-fundo-titulo: var(--night-blue-1);
+    --cor-da-fonte: var(--night-blue-2);
+    --cor-fonte-clara: #cfe4e2;
 }
 
 *{
@@ -14,10 +32,18 @@
     margin: 0;
 }
 
+body{
+    background-image: linear-gradient(to bottom #2E8A99, #0E2954);
+}
+
 
 h1{
-    margin-left: 160px
+    width: 1250px;
+    margin-left: 160px;
+    background: var(--cor-fundo-titulo);
+    background-color: var(--cor-da-fonte) ;
 }
+
 
 .cabecalho {
     width: 100%;
@@ -32,6 +58,7 @@ h1{
 .imagem-banner {
     width: 1900px;
     height: 400px;
+    background: var(--night-blue-4);
 }
 
 .icone {
@@ -40,8 +67,9 @@ h1{
 }
 
 .principal-contentor {
-    margin-top: 100px;
-    background: var(--cor-do-fundo);
+    margin-top: 50px;
+    /*background: var(--cor-do-fundo);*/
+    background-image: linear-gradient(var(--night-blue-4), var(--night-blue-1));
 }
 
 .rodape-container {

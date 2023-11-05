@@ -1,0 +1,34 @@
+@media (max-width: 1500px) {
+   
+    .livro-page-individual {
+        margin-top: 20px;
+        margin-left: 300px;
+        width: 280px;
+        height: 350px;
+    }
+
+    .texto-page-individual {
+        margin-left: 300px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .titulo-sobre {
+        margin-left: 300px;
+    }
+
+    .titulo-sobre {
+        margin-left: 300px;
+    }
+
+}
+
+@media (max-width: 1366px) {
+    
+
+    .descricao-page-individual {
+        margin-left: -5px;
+
+    }
+
+}

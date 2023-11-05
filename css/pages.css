@@ -1,0 +1,66 @@
+.apresentacao-livro {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 50px;
+    background-color: azure;
+    width: 100%;
+    height: 400px;
+    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: 900px 400px;
+    
+}
+
+.descricao-page-individual {
+    margin-right: 140px;
+    margin-left: 100px;
+
+}
+
+.livro-page-individual {
+    margin-top: 20px;
+    margin-left: 500px;
+    width: 280px;
+    height: 350px;
+}
+
+.botoes-page-contentor {
+    margin-left: 100px;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+}
+
+.botao-pagina {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.titulo-livro {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-livro {
+    text-align: center;
+}
+
+
+
+.container-info-livro {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #ffff;
+
+}
+
+.texto-page-individual {
+    margin-left: 400px;
+    width: 400px;
+    height: 400px;
+}
+
+.titulo-sobre {
+    margin-left: 400px;
+}
+

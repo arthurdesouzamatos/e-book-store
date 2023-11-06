@@ -1,4 +1,4 @@
- @media (max-width: 1366px) {
+ @media (max-width: 1405px) {
         .imagem-banner {
             width: 1360px;
             height: 350px;
@@ -20,7 +20,7 @@
         .livro-cartao {
             width: 500px;
             height: 320px;
-            border: 4px solid var(--cor-das-bordas);
+            border: 2px solid var(--cor-das-bordas);
             display: grid;
             grid-template-columns: 250px 250px;
             font-size: small;
@@ -43,7 +43,7 @@
     }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     
     .principal-contentor h1 {
         width: 500px;
@@ -54,7 +54,7 @@
     }
 
     .imagem-banner {
-        width: 800px;
+        width: 1000px;
         height: 200px;
     }
 
@@ -109,4 +109,12 @@
         display: none;
     }
     
+}
+
+
+@media (max-width: 800px) {
+    .imagem-banner {
+        width: 800px;
+        height: 200px;
+    }
 }

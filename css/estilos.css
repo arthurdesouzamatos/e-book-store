@@ -37,6 +37,10 @@ body{
     background-image: linear-gradient(to bottom #2E8A99, #0E2954);
 }
 
+.header {
+    background: var(--cor-do-fundo);
+}
+
 
 .principal-contentor h1{
     width: 1295px;
@@ -45,6 +49,12 @@ body{
     border-left: 8px solid var(--cor-das-bordas);
     background: var(--cor-fundo-titulo);
     background-color: var(--cor-da-fonte) ;
+}
+
+.livro-imagem-movel {
+    width: 500px;
+    height: 600px;
+    display: none;
 }
 
 

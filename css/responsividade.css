@@ -40,6 +40,24 @@
         .livro-info {
             margin-top: -65px;
         }
+
+        /* responsividade page */
+
+        .apresentacao-livro {
+            grid-template-columns: 500px 400px;
+        }
+
+        .livro-page-individual {
+            margin-top: 20px;
+            margin-left: 200px;
+            width: 280px;
+            height: 350px;
+        }
+
+        .descricao-page-individual {
+            margin-left: -200px;
+
+        }
     }
 
 
@@ -73,6 +91,71 @@
        margin-left: 200px ;
     }
 
+    
+    /* responsividade page */
+
+    .apresentacao-livro {
+        grid-template-columns: 400px 300px;
+        
+    }
+
+    .botao-pagina {
+        margin-left: -50px;
+    }
+
+    .livro-page-individual {
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 280px;
+        height: 350px;
+    }
+
+    .descricao-page-individual {
+        margin-left: -350px;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+    /* responsividade page */
+    .livro-page-individual {
+        margin-left: 80px;
+    }
+
+    .apresentacao-livro {
+        grid-template-columns: 400px;
+    }
+
+    .descricao-page-individual {
+        margin-top: 350px;
+    }
+
+    .container-info-livro {
+        margin-left: 20px;
+    }
+
+    .container-info {
+        display: none;
+    }
+
+    .container-info-livro {
+        border: none;
+    }
+
+    .botao-pagina {
+        margin-left: 20px;
+    }
+
+    .descricao-page-individual {
+        margin-top: 200px;
+    }
+
+    .texto-page-individual {
+        width: 320px;
+    
+    }
 }
 
 @media (max-width: 500px) {

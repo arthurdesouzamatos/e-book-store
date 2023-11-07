@@ -1,6 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Play:wght@400;700&family=VT323&display=swap');
-@import url("./responsividade-page.css");
 @import url("./pages.css");
 
 *{
@@ -9,9 +8,9 @@
 }
 
 :root {
-    --fonte-um: 'Gruppo', sans-serif;
-    --fonte-dois: 'Play', sans-serif;
-    --fonte-tres: 'VT323', monospace;
+    --fonte-um: 'Gruppo', sans-serif; /*fonte para textos*/
+    --fonte-dois: 'Play', sans-serif; /*fonte para títulos*/
+    --fonte-tres: 'VT323', monospace; /*texto das paginas*/
 
     --cor-sort-1:#74B5C2;
     --cor-sort-2: #2EF55E;
@@ -28,21 +27,14 @@
     --night-blue-3: #7752FE;
     --night-blue-4: #190482;
 
-    --cor-do-fundo: var(--night-blue-1);
-    --cor-dos-cartoes: var(--night-blue-2) ;
-    --cor-das-bordas: var(--night-blue-3);
+    --cor-do-fundo: var(--night-blue-2);
+    --cor-dos-cartoes: var(--night-blue-3) ;
+    --cor-das-bordas: var(--night-blue-4);
     --cor-fundo-titulo: var(--night-blue-1);
     --cor-da-fonte: var(--night-blue-2);
     --cor-fonte-clara: #cfe4e2;
 }
 
-
-
-body{
-    background-image: linear-gradient(to bottom #2E8A99, #0E2954);
-    
-
-}
 
 .header {
     background: var(--cor-do-fundo);
@@ -89,7 +81,7 @@ body{
 
 .principal-contentor {
     margin-top: 50px;
-    background-image: linear-gradient(var(--night-blue-4), var(--night-blue-1));
+    background-image: linear-gradient(var(--night-blue-4), var( --cor-azul-dark-2));
 }
 
 .rodape-container {

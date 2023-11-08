@@ -167,9 +167,11 @@
 
     .livro-imagem-movel {
         margin-left: 15px;
+        margin-top: 10px;
         width: 450px;
         height: 500px;
         display: block;
+        border: 5px solid gold;
     }
 
 

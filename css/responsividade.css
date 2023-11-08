@@ -41,7 +41,7 @@
             margin-top: -65px;
         }
 
-        /* responsividade page */
+        /* responsividade pages */
 
         .apresentacao-livro {
             grid-template-columns: 500px 400px;
@@ -92,7 +92,7 @@
     }
 
     
-    /* responsividade page */
+    /* responsividade pages */
 
     .apresentacao-livro {
         grid-template-columns: 400px 300px;
@@ -119,7 +119,7 @@
 
 @media (max-width: 800px) {
     
-    /* responsividade page */
+    /* responsividade pages */
     .livro-page-individual {
         margin-left: 80px;
     }
@@ -166,8 +166,11 @@
     }
 
     .livro-imagem-movel {
+        margin-left: 40px;
+        width: 400px;
+        height: 470px;
         display: block;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
 

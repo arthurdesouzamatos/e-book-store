@@ -29,7 +29,7 @@
 
     --cor-do-fundo: var(--night-blue-2);
     --cor-dos-cartoes: var(--night-blue-3) ;
-    --cor-das-bordas: var(--night-blue-4);
+    --cor-das-bordas: var(--night-blue-3);
     --cor-fundo-titulo: var(--night-blue-1);
     --cor-da-fonte: var(--night-blue-2);
     --cor-fonte-clara: #cfe4e2;
@@ -118,11 +118,12 @@
     grid-template-columns: 300px 300px;
     font-family: var(--fonte-um);
     color: #ffff;
+    box-shadow: 2px 1px 1px black;
     transition: 300ms ease-in-out;
 }
 
 .livro-cartao:hover {
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 8px 4px 4px black;
 }
 
 

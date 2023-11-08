@@ -20,7 +20,6 @@
         .livro-cartao {
             width: 500px;
             height: 320px;
-            border: 2px solid var(--cor-das-bordas);
             display: grid;
             grid-template-columns: 250px 250px;
             font-size: small;

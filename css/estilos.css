@@ -44,6 +44,22 @@
     margin-top: 50px;
 }
 
+.cabecalho {
+    width: 100%;
+    height: 420px;
+}
+
+.imagem-logo {
+    width: 120px;
+    height: 40px;
+}
+
+.imagem-banner {
+    width: 1900px;
+    height: 400px;
+    background: var(--night-blue-4);
+}
+
 .principal-contentor {
 	width: 100%;
 	height: 100%;
@@ -51,7 +67,6 @@
 	background-size: 180% 180%;
 	animation: gradient-animation 3s ease infinite;
 }
-
 
 
 .principal-contentor h1{
@@ -71,28 +86,10 @@
 }
 
 
-.cabecalho {
-    width: 100%;
-    height: 420px;
-}
-
-.imagem-logo {
-    width: 120px;
-    height: 40px;
-}
-
-.imagem-banner {
-    width: 1900px;
-    height: 400px;
-    background: var(--night-blue-4);
-}
-
 .icone {
     width: 50px;
     height: 20px;
 }
-
-
 
 .rodape-container {
     background-color: #a9c9ba;
@@ -121,12 +118,13 @@
     grid-template-columns: 300px 300px;
     font-family: var(--fonte-um);
     color: #ffff;
-
+    transition: 300ms ease-in-out;
 }
 
 .livro-cartao:hover {
     box-shadow: 10px 5px 5px black;
 }
+
 
 
 .livro-imagem {

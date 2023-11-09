@@ -101,7 +101,7 @@
     margin-bottom: 50px;
     margin-left: 150px;
     grid-template-columns: 25% 25%;
-    grid-row-gap: 50px;
+    grid-row-gap: 20px;
     grid-column-gap: 250px;
 }
 

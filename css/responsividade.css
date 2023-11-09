@@ -165,18 +165,16 @@
     }
 
     .livro-imagem-movel {
-        margin-left: 5px;
         margin-top: 10px;
-        width: 450px;
-        height: 500px;
+        width: 470px;
+        height: 550px;
         display: block;
-        border: 5px solid gold;
     }
 
 
     .imagem-banner {
         width: 500px;
-        height: 200px;
+        height: 230px;
     }
     
     .principal-contentor h1 {

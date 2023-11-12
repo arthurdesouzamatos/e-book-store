@@ -1,0 +1,82 @@
+@import url("estilos.css");
+.cabecalho {
+    padding-bottom: 20px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 600px 500px 200px;
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--night-blue-4);
+}
+
+.barra-meio {
+    background-color: var(--cor-azul-dark-4);
+    font-family: var(--font-um);
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-esquerdo {
+
+}
+
+.imagem-logo {
+    margin-top: 36px;
+    margin-left: 400px;
+    width: 180px;
+    height: 60px;
+}
+
+.menu-central {
+    
+    margin-top: 50px;
+    align-items: center;
+}
+
+.menu-input {
+    margin-left: 30px;
+    margin-top: -20px;
+    width: 350px;
+    height: 58px;
+}
+
+.lista-menu {
+    padding-top: 10px;
+    margin-left: 350px;
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.lista-menu__itens {
+    list-style-type: none;
+}
+
+.lista-menu__links {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu-direito__itens {
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+.menu-direito__link {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu-direito {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-size: 20px;
+}
+
+.imagem-login {
+    margin-right: 5px;
+}
+

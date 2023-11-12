@@ -32,7 +32,7 @@
     --cor-das-bordas: var(--night-blue-3);
     --cor-fundo-titulo: var(--night-blue-1);
     --cor-da-fonte: var(--night-blue-2);
-    --cor-fonte-clara: #cfe4e2;
+    --cor-fonte-clara: #ffff;
 }
 
 
@@ -40,19 +40,7 @@
     background: var(--cor-do-fundo);
 }
 
-.principal-contentor {
-    margin-top: 50px;
-}
 
-.cabecalho {
-    width: 100%;
-    height: 420px;
-}
-
-.imagem-logo {
-    width: 120px;
-    height: 40px;
-}
 
 .imagem-banner {
     width: 1900px;
@@ -65,17 +53,14 @@
 	height: 100%;
 	background: linear-gradient(334deg, #2E8A99, #7525e2, #f7137e);
 	background-size: 180% 180%;
-	animation: gradient-animation 3s ease infinite;
+	animation: gradient-animation 6s ease infinite;
 }
 
 
 .principal-contentor h1{
-    width: 1295px;
+    color: var(--cor-fonte-clara);
+    font-weight: bold;
     margin-left: 150px;
-    border-top: 5px solid var(--cor-das-bordas);
-    border-left: 8px solid var(--cor-das-bordas);
-    background: var(--cor-fundo-titulo);
-    background-color: var(--cor-da-fonte) ;
     font-family: var(--fonte-dois);
 }
 

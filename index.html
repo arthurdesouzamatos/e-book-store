@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/estilos.css">
   <link rel="stylesheet" href="./css/pages.css">
   <link rel="stylesheet" href="./css/responsividade.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -16,150 +17,135 @@
 
 
   <header class="cabecalho">
-
-    <nav class="navbar navbar-expand-lg bg-dark barra-navegacao">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="imagem-logo" src="./Imagens/image-logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active imagem-carousel">
-          <img class="imagem-banner" src="Imagens/tudo.png" alt="">
-        </div>
-        <div class="carousel-item">
-          <img class="imagem-banner" src="Imagens/banner+rocco1.jpeg" alt="">
-        </div>
-        <div class="carousel-item">
-          <img class="imagem-banner" src="/Imagens/BANNER-BOTTONS-ROCCO.jpg" alt="imagem scifi">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div class="menu-esquerdo">
+      <img class="imagem-logo" src="./Imagens/image-logo.png" alt="">
     </div>
+
+    <div class="menu-central">
+      <form class="menu-input-contentor">
+        <input class="menu-input" type="text" placeholder="Buscar Produto">
+        <input type="submit">
+      </form>
+
+    </div>
+
+    <div class="menu-direito">
+        <li class="menu-direito__itens"><a class="menu-direito__link" href="#"><img class="imagem-login" src="./Imagens/usuário-32.png" alt="">Login</a></li>
+        <li class="menu-direito__itens"><a class="menu-direito__link" href="#">Registro</a></li>
+    </div>
+
+
   </header>
 
+  <div class="barra-meio">
+    <ul class="lista-menu">
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Destaques</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Mais Vendidos</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Autores</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Editoras</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Novidades</a></li>
+    </ul>
+  </div>
 
-  
-    <div class="principal-contentor">
-    
-      <h1>Lançamentos</h1>
 
-      <div class="dispositivo-movel">
-        <a href="livro9.html"><img class="livro-imagem-movel" src="./Imagens/duna.jpg" alt=""></a>
-        <a href="livro-amor-gelato.html"><img class="livro-imagem-movel" src="./Imagens/amor_gelato.jpg" alt=""></a>
-        <a href="livro6.html"><img class="livro-imagem-movel" src="./Imagens/as-cronicas-de-fogo-e-gelo.jpg" alt=""></a>
-        <a href="livro2.html"><img class="livro-imagem-movel" src="./Imagens/corte-de-mel-e-cinzas-.jpg" alt=""></a>
-        <a href=""><img class="livro-imagem-movel" src="./Imagens/de-sangue-e-cinzas.jpg" alt=""></a>
-        <a href="livro7.html"><img class="livro-imagem-movel" src="./Imagens/o-nome-do-vento.jpg" alt=""></a>
-        <a href="livro8.html"><img class="livro-imagem-movel" src="./Imagens/ordem-da-fenix.jpg" alt=""></a>
-        <a href="livro4.html"><img class="livro-imagem-movel" src="./Imagens/os-cem-mil-reinos.jpg" alt=""></a>
-        <a href="livro-abismo.html"><img class="livro-imagem-movel" src="./Imagens/os_abismos_esquecidos.jpg" alt=""></a>
-        <a href="livro5.html"><img class="livro-imagem-movel" src="./Imagens/percy-jackson.jpg" alt=""></a>
-        <a href="livro10.html"><img class="livro-imagem-movel" src="./Imagens/senhor-dos-aneis.jpg" alt=""></a>
-        <a href="livro-ted.html"><img class="livro-imagem-movel" src="./Imagens/srta_peregrine.jpg" alt=""></a>
-        <a href="livro-ted.html"><img class="livro-imagem-movel" src="./Imagens/ted_bundy.jpg" alt=""></a>
-        <a href="livro3.html"><img class="livro-imagem-movel" src="./Imagens/uma-luz-na-chama.jpg" alt=""></a>
-                
+  <div class="principal-contentor">
+
+    <h1>Lançamentos</h1>
+
+    <div class="dispositivo-movel">
+      <a href="livro9.html"><img class="livro-imagem-movel" src="./Imagens/duna.jpg" alt=""></a>
+      <a href="livro-amor-gelato.html"><img class="livro-imagem-movel" src="./Imagens/amor_gelato.jpg" alt=""></a>
+      <a href="livro6.html"><img class="livro-imagem-movel" src="./Imagens/as-cronicas-de-fogo-e-gelo.jpg" alt=""></a>
+      <a href="livro2.html"><img class="livro-imagem-movel" src="./Imagens/corte-de-mel-e-cinzas-.jpg" alt=""></a>
+      <a href=""><img class="livro-imagem-movel" src="./Imagens/de-sangue-e-cinzas.jpg" alt=""></a>
+      <a href="livro7.html"><img class="livro-imagem-movel" src="./Imagens/o-nome-do-vento.jpg" alt=""></a>
+      <a href="livro8.html"><img class="livro-imagem-movel" src="./Imagens/ordem-da-fenix.jpg" alt=""></a>
+      <a href="livro4.html"><img class="livro-imagem-movel" src="./Imagens/os-cem-mil-reinos.jpg" alt=""></a>
+      <a href="livro-abismo.html"><img class="livro-imagem-movel" src="./Imagens/os_abismos_esquecidos.jpg" alt=""></a>
+      <a href="livro5.html"><img class="livro-imagem-movel" src="./Imagens/percy-jackson.jpg" alt=""></a>
+      <a href="livro10.html"><img class="livro-imagem-movel" src="./Imagens/senhor-dos-aneis.jpg" alt=""></a>
+      <a href="livro-ted.html"><img class="livro-imagem-movel" src="./Imagens/srta_peregrine.jpg" alt=""></a>
+      <a href="livro-ted.html"><img class="livro-imagem-movel" src="./Imagens/ted_bundy.jpg" alt=""></a>
+      <a href="livro3.html"><img class="livro-imagem-movel" src="./Imagens/uma-luz-na-chama.jpg" alt=""></a>
+
+    </div>
+
+    <div class="livros-contetor">
+
+      <div class="livro-cartao">
+        <img class="livro-imagem" src="./Imagens/os-cem-mil-reinos.jpg" alt="os cem mil reinos">
+        <div class="livro-descricao">
+          <div class="titulo-com-descricao">
+            <h5 class="livro-titulo">Os Cem mil Reinos</h5>
+            <p class="descricao">Tudo o que Yeine sabia sobre Céu eram as histórias aterrorizantes, mas logo
+              ela percebe que a realidade é ainda pior. Os cem mil reinos, primeiro volume da trilogia Legado, é o
+              livro
+              de estreia da...</p>
+          </div>
+          <div class="livro-info">
+            <h5>R$ 45,00</h5>
+            <p>ou 3x de R$25,00</p>
+            <a href="livro4.html" class="btn btn-primary">Ver mais</a>
+            <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
+          </div>
+
+
+        </div>
       </div>
-      
-      <div class="livros-contetor">
-        
-        <div class="livro-cartao">
-          <img class="livro-imagem" src="./Imagens/os-cem-mil-reinos.jpg" alt="os cem mil reinos">
-          <div class="livro-descricao">
-            <div class="titulo-com-descricao">
-              <h5 class="livro-titulo">Os Cem mil Reinos</h5>
-              <p class="descricao">Tudo o que Yeine sabia sobre Céu eram as histórias aterrorizantes, mas logo
-                ela percebe que a realidade é ainda pior. Os cem mil reinos, primeiro volume da trilogia Legado, é o
-                livro
-                de estreia da...</p>
-            </div>
-            <div class="livro-info">
-              <h5>R$ 45,00</h5>
-              <p>ou 3x de R$25,00</p>
-              <a href="livro4.html" class="btn btn-primary">Ver mais</a>
-              <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
-            </div>
-            
-              
-          </div>
-        </div>
 
-        <div class="livro-cartao">
-          <img class="livro-imagem" src="./Imagens/percy-jackson.jpg" alt="Percy Jackson">
-          <div class="livro-descricao">
-            <div class="titulo-com-descricao">
-              <h5 class="livro-titulo">Percy Jackson e os Olimpianos</h5>
-              <p class="descricao">Depois de salvar o mundo inúmeras vezes de monstros, titãs, gigantes e outras criaturas aterrorizantes, tudo que Percy deseja é que seu último ano no ensino médio seja tranquilo. Infelizmente, os deuses...</p>
-            </div>
-            <div class="livro-info">
-              <h5>R$ 30,00</h5>
-              <p>ou 3x de R$10,00</p>
-              <a href="livro5.html" class="btn btn-primary">Ver mais</a>
-              <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
-            </div>
+      <div class="livro-cartao">
+        <img class="livro-imagem" src="./Imagens/percy-jackson.jpg" alt="Percy Jackson">
+        <div class="livro-descricao">
+          <div class="titulo-com-descricao">
+            <h5 class="livro-titulo">Percy Jackson e os Olimpianos</h5>
+            <p class="descricao">Depois de salvar o mundo inúmeras vezes de monstros, titãs, gigantes e outras criaturas
+              aterrorizantes, tudo que Percy deseja é que seu último ano no ensino médio seja tranquilo. Infelizmente,
+              os deuses...</p>
+          </div>
+          <div class="livro-info">
+            <h5>R$ 30,00</h5>
+            <p>ou 3x de R$10,00</p>
+            <a href="livro5.html" class="btn btn-primary">Ver mais</a>
+            <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
           </div>
         </div>
+      </div>
 
-        <div class="livro-cartao">
-          <img class="livro-imagem" src="./Imagens/os_abismos_esquecidos.jpg" alt="os abismos esquecidos">
-          <div class="livro-descricao">
-            <div class="titulo-com-descricao">
-              <h5 class="livro-titulo">Os Abismos Esquecidos</h5>
-              <p class="descricao">No terceiro volume da trilogia OS FUNDADORES, o grupo desta vez confronta uma entidade cuja inteligência está espalhada pelo mundo: um fantasma na máquina que usa a tecnologia mágica...</p>
-            </div>
-            <div class="livro-info">
-              <h5>R$ 90,00</h5>
-              <p>ou 3x de R$30,00</p>
-              <a href="livro-abismo.html" class="btn btn-primary">Ver mais</a>
-              <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
-            </div>
+      <div class="livro-cartao">
+        <img class="livro-imagem" src="./Imagens/os_abismos_esquecidos.jpg" alt="os abismos esquecidos">
+        <div class="livro-descricao">
+          <div class="titulo-com-descricao">
+            <h5 class="livro-titulo">Os Abismos Esquecidos</h5>
+            <p class="descricao">No terceiro volume da trilogia OS FUNDADORES, o grupo desta vez confronta uma entidade
+              cuja inteligência está espalhada pelo mundo: um fantasma na máquina que usa a tecnologia mágica...</p>
+          </div>
+          <div class="livro-info">
+            <h5>R$ 90,00</h5>
+            <p>ou 3x de R$30,00</p>
+            <a href="livro-abismo.html" class="btn btn-primary">Ver mais</a>
+            <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
           </div>
         </div>
+      </div>
 
-        <div class="livro-cartao">
-          <img class="livro-imagem" src="./Imagens/ted_bundy.jpg" alt="Ted Bundy: Um Estranho ao Meu Lado">
-          <div class="livro-descricao">
-            <div class="titulo-com-descricao">
-              <h5 class="livro-titulo">Ted Bundy: Um Estranho ao Meu Lado</h5>
-              <p class="descricao">Quando Ann Rule conheceu Ted Bundy em um centro de atendimento de prevenção ao suicídio, ela não fazia ideia de que aquele rapaz simpático e inteligente.</p>
-            </div>
-            <div class="livro-info">
-              <h5>R$ 90,00</h5>
-              <p>ou 3x de R$30,00</p>
-              <a href="livro-ted.html" class="btn btn-primary">Ver mais</a>
-              <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
-            </div>
+      <div class="livro-cartao">
+        <img class="livro-imagem" src="./Imagens/ted_bundy.jpg" alt="Ted Bundy: Um Estranho ao Meu Lado">
+        <div class="livro-descricao">
+          <div class="titulo-com-descricao">
+            <h5 class="livro-titulo">Ted Bundy: Um Estranho ao Meu Lado</h5>
+            <p class="descricao">Quando Ann Rule conheceu Ted Bundy em um centro de atendimento de prevenção ao
+              suicídio, ela não fazia ideia de que aquele rapaz simpático e inteligente.</p>
+          </div>
+          <div class="livro-info">
+            <h5>R$ 90,00</h5>
+            <p>ou 3x de R$30,00</p>
+            <a href="livro-ted.html" class="btn btn-primary">Ver mais</a>
+            <button class=" botao-comprar btn btn-primary" type="submit"><i class="bi bi-cart-plus"></i></button>
           </div>
         </div>
-        
-        <div class="livro-cartao">
+      </div>
+
+      <div class="livro-cartao">
         <img class="livro-imagem" src="./Imagens/o-nome-do-vento.jpg" alt="O Nome do Vento">
         <div class="livro-descricao">
           <div class="titulo-com-descricao">
@@ -177,14 +163,14 @@
         </div>
       </div>
 
-      </div>
+    </div>
 
 
-       <div class="sessao">
+    <div class="sessao">
       <h1>Livros em Destaque</h1>
     </div>
     <div class="livros-contetor">
-      
+
 
       <div class="livro-cartao">
         <img class="livro-imagem" src="./Imagens/as-cronicas-de-fogo-e-gelo.jpg" alt="As cronicas de fogo e gelo">
@@ -193,7 +179,8 @@
             <h5 class="livro-titulo">As Crônicas de Fogo e Gelo - Livro III</h5>
             <p class="descricao">O futuro de Westeros está em jogo, e ninguém descansará até que os Sete
               Reinos tenham explodido em uma verdadeira tormenta de espadas. Dos cinco pretendentes ao trono, um está
-              morto...</p></p>
+              morto...</p>
+            </p>
           </div>
           <div class="livro-info">
             <h5>R$ 15,00</h5>
@@ -222,7 +209,7 @@
         </div>
       </div>
 
-      
+
       <div class="livro-cartao">
         <img class="livro-imagem" src="./Imagens/de-sangue-e-cinzas.jpg" alt="de sangue e cinzas">
         <div class="livro-descricao">
@@ -246,7 +233,9 @@
         <div class="livro-descricao">
           <div class="titulo-com-descricao">
             <h5 class="livro-titulo">Corte de Mel e Cinzas</h5>
-            <p class="descricao">Após um brutal treinamento de oito anos em Underhill, Kallik, uma mestiça metade humana e metade feérica, sobreviveu ao teste final e poderá retornar para casa e, quem sabe, ter a vida que sempre sonhou ter...</p>
+            <p class="descricao">Após um brutal treinamento de oito anos em Underhill, Kallik, uma mestiça metade humana
+              e metade feérica, sobreviveu ao teste final e poderá retornar para casa e, quem sabe, ter a vida que
+              sempre sonhou ter...</p>
           </div>
           <div class="livro-info">
             <h5>R$ 60,00</h5>
@@ -257,7 +246,7 @@
         </div>
       </div>
 
-      
+
       <div class="livro-cartao">
         <img class="livro-imagem" src="./Imagens/ordem-da-fenix.jpg" alt="Harry Potter e Ordem da Fênix">
         <div class="livro-descricao">
@@ -316,7 +305,9 @@
         <div class="livro-descricao">
           <div class="titulo-com-descricao">
             <h5 class="livro-titulo">Amor & Gelato</h5>
-            <p class="descricao">Depois da morte da mãe, Lina fica com a missão de realizar um último pedido: ir até a Itália para conhecer o pai. Do dia para a noite, ela se vê na famosa paisagem da Toscana, morando em uma casa localizada no mesmo terreno de um cemitério...</p>
+            <p class="descricao">Depois da morte da mãe, Lina fica com a missão de realizar um último pedido: ir até a
+              Itália para conhecer o pai. Do dia para a noite, ela se vê na famosa paisagem da Toscana, morando em uma
+              casa localizada no mesmo terreno de um cemitério...</p>
           </div>
           <div class="livro-info">
             <h5>R$ 18,00</h5>
@@ -327,32 +318,33 @@
         </div>
       </div>
     </div>
-    
-
-  <div>
 
 
-    <form class="caixa-email">
-      <h5>
-        Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
-        compra? Cadastre-se!
-      </h5>
+    <div>
 
-      <div class="input-group my-3">
-        <input type="email" class="form-control border-secondary rounded-0" placeholder="Digite seu e-mail"
-          aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
-        <button type="button" class="btn btn-primary botao-lilas rounded-0 border-0 " id="button-addon2">Enviar</button>
+
+      <form class="caixa-email">
+        <h5>
+          Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
+          compra? Cadastre-se!
+        </h5>
+
+        <div class="input-group my-3">
+          <input type="email" class="form-control border-secondary rounded-0" placeholder="Digite seu e-mail"
+            aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
+          <button type="button" class="btn btn-primary botao-lilas rounded-0 border-0 "
+            id="button-addon2">Enviar</button>
+        </div>
+      </form>
+
+      <div class="text-center bg-black text-bg-dark">
+        <p class="card-text py-3">2023 <i class="bi bi-c-circle"></i> E-bookstore | Todos os direitos reservados.</p>
       </div>
-    </form>
 
-    <div class="text-center bg-black text-bg-dark">
-      <p class="card-text py-3">2023 <i class="bi bi-c-circle"></i> E-bookstore | Todos os direitos reservados.</p>
     </div>
-
   </div>
-    </div>
-      
-   
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -1,7 +1,19 @@
- @media (max-width: 1600px) {
+@media (min-width: 1800px) {
+    .principal-contentor h1 {
+        margin-left: 200px;
+    }
+    
+    .livros-contetor {
+        margin-left: 200px;
+        grid-column-gap: 200px;
+    }
+}
+
+
+@media (max-width: 1600px) {
 
     .livros-contetor {
-        margin-left: 80px;
+        margin-left: 20px;
         grid-column-gap: 210px;
     }
 
@@ -23,6 +35,9 @@
  
  @media (max-width: 1405px) {
 
+        .navbar-lateral {
+            margin-left: 86%;
+        }
 
         .banner-contetor {
             padding: 0;
@@ -91,6 +106,11 @@
 
 @media (max-width: 1200px) {
 
+    .navbar-lateral {
+        margin-top: 6%;
+        margin-left: 70%;
+    }
+
     /*Carrossel*/
 
     .imagem-banner {
@@ -124,6 +144,10 @@
 }
 
 @media (max-width: 1000px) {
+
+    .navbar-lateral {
+        display: none;
+    }
 
     /*Cabecalho*/
 
@@ -176,6 +200,10 @@
 }
 
 @media (max-width: 800px) {
+
+    footer {
+        display: none;
+    }
     
     /*Cabecalho*/
     .menu-central {

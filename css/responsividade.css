@@ -1,4 +1,33 @@
+ @media (max-width: 1600px) {
+
+    .livros-contetor {
+        margin-left: 80px;
+        grid-column-gap: 210px;
+    }
+
+    .imagem-banner {
+        width: 1200px;
+    }
+
+    .banner-contetor {
+        padding-right: 300px;
+        padding-left: 80px;
+    }
+
+    /*Cabecalho*/
+
+    .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
+        margin-left:  -200px;
+    }
+ }
+ 
  @media (max-width: 1405px) {
+
+
+        .banner-contetor {
+            padding: 0;
+        }
+    
         .imagem-banner {
             width: 1360px;
             height: 350px;
@@ -12,6 +41,7 @@
         .titulo-com-descricao {
             width: 150px;
         }
+        
 
         .livro-descricao {
             width: 150px;
@@ -59,16 +89,26 @@
         }
     }
 
+@media (max-width: 1200px) {
 
-@media (max-width: 1000px) {
-    
-    .principal-contentor h1 {
-        width: 500px;
-    }
-    
+    /*Carrossel*/
+
     .imagem-banner {
-        width: 1000px;
-        height: 200px;
+        width: 1050px;
+        padding-left: 20px;
+        height: 300px;
+    }
+
+    /*Cabecalho */
+
+    .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
+        margin-left: -250px;
+    }
+
+    /*Principal*/
+
+    .livros-contetor {
+        margin-left: 5px;
     }
 
     .livros-contetor {
@@ -80,6 +120,29 @@
         grid-row-gap: 10px;
         grid-column-gap: 250px;
     }
+
+}
+
+@media (max-width: 1000px) {
+
+    /*Cabecalho*/
+
+    .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
+        margin-left: -300px;
+    }
+    
+    .imagem-banner {
+        width: 1000px;
+        height: 300px;
+        padding: 0;
+    }
+
+    /*Principal*/
+    
+    .principal-contentor h1 {
+        width: 500px;
+    }
+    
 
     .caixa-email {
        width: 400px;
@@ -114,6 +177,13 @@
 
 @media (max-width: 800px) {
     
+    /*Cabecalho*/
+    .menu-central {
+        display: none;
+    }
+
+
+
     /* responsividade pages */
     .livro-page-individual {
         margin-left: 80px;
@@ -155,6 +225,9 @@
 
 @media (max-width: 500px) {
     
+    .barra-meio {
+        display: none;
+    }
 
     .livros-contetor {
         margin-top: -50px;
@@ -167,12 +240,10 @@
         display: block;
     }
 
-
-    .imagem-banner {
-        width: 500px;
-        height: 230px;
+    .banner-contetor {
+        display: none;
     }
-    
+
     .principal-contentor h1 {
         display: none;
     }
@@ -189,12 +260,4 @@
         display: none;
     }
     
-}
-
-
-@media (max-width: 800px) {
-    .imagem-banner {
-        width: 800px;
-        height: 200px;
-    }
 }

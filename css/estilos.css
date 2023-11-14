@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Play:wght@400;700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Play:wght@400;700&family=VT323&family=Vina+Sans&display=swap');
 @import url("./pages.css");
 
 *{
@@ -11,6 +11,7 @@
     --fonte-um: 'Gruppo', sans-serif; /*fonte para textos*/
     --fonte-dois: 'Play', sans-serif; /*fonte para títulos*/
     --fonte-tres: 'VT323', monospace; /*texto das paginas*/
+    --font-4: 'Vina Sans', sans-serif;
 
     --cor-sort-1:#74B5C2;
     --cor-sort-2: #2EF55E;
@@ -40,18 +41,25 @@
     background: var(--cor-do-fundo);
 }
 
+.banner-contetor{
+    padding-right: 510px;
+    padding-left: 150px;
+    background-color: var(--cor-azul-dark-4);
+    transition: 300ms ease-in-out;
+}
 
 
 .imagem-banner {
-    width: 1900px;
-    height: 400px;
+    width: 1300px;
+    height: 380px;
     background: var(--night-blue-4);
+
 }
 
 .principal-contentor {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(334deg, #2E8A99, #7525e2, #f7137e);
+	background: linear-gradient(334deg, #8E8FFA, #190482);
 	background-size: 180% 180%;
 	animation: gradient-animation 6s ease infinite;
 }
@@ -87,7 +95,7 @@
     margin-left: 150px;
     grid-template-columns: 25% 25%;
     grid-row-gap: 20px;
-    grid-column-gap: 250px;
+    grid-column-gap: 200px;
 }
 
 .livro-cartao h5{

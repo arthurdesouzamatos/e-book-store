@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
 </head>
 <body>
-    <header class="cabecalho">
+  <header class="cabecalho">
+    <div class="menu-esquerdo">
+      <img class="imagem-logo" src="../Imagens/image-logo.png" alt="">
+    </div>
 
-        <div class="menu-central">
-    
-          <form class="menu-input-contentor">
-            <input class="menu-input" type="text" placeholder="Buscar Produto" >
-            <input type="submit">
-          </form>     
-            <ul class="lista-menu">
-              <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Destaques</a></li>
-              <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Mais Vendidos</a></li>
-              <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Autores</a></li>
-              <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Editoras</a></li>
-              <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Novidades</a></li>
-            </ul>
-    
-        </div>
+    <div class="menu-central">
+      <form class="menu-input__contentor">
+        <input class="menu-input" type="text" placeholder="Buscar Produto">
+        <input class="botao-input" type="submit">
+      </form>
 
-    
-    
-      </header>
+    </div>
+
+    <div class="menu-direito">
+        <li class="menu-direito__itens"><a class="menu-direito__link" href="#"><img class="imagem-login" src="./Imagens/usuário-32.png" alt="">Perfil</a></li>
+        <li class="menu-direito__itens"><a class="menu-direito__link" href="#">Registro</a></li>
+    </div>
+
+
+  </header>
+
+  <div class="barra-meio">
+    <ul class="lista-menu">
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Destaques</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Mais Vendidos</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Autores</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Editoras</a></li>
+      <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Novidades</a></li>
+    </ul>
+  </div>
     
 </body>
 </html>

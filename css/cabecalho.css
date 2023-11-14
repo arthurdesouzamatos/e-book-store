@@ -1,6 +1,6 @@
 @import url("estilos.css");
+@import url("./responsividade.css");
 .cabecalho {
-    padding-bottom: 20px;
     width: 900px;
     display: grid;
     grid-template-columns: 600px 500px 200px;
@@ -8,6 +8,7 @@
     margin-top: auto;
     background-color: var(--night-blue-4);
 }
+
 
 .barra-meio {
     background-color: var(--cor-azul-dark-4);
@@ -17,15 +18,9 @@
     font-size: 18px;
 }
 
-.menu-esquerdo {
-
-}
-
 .imagem-logo {
     margin-top: 36px;
-    margin-left: 400px;
-    width: 180px;
-    height: 60px;
+    margin-left: 380px;
 }
 
 .menu-central {
@@ -34,11 +29,26 @@
     align-items: center;
 }
 
+.menu-input__contentor {
+    border: 1px solid #ffff;
+    background-color: #ffff;
+    margin-top: -9px;
+    width: 420px;
+    height: 50px;
+}
+
 .menu-input {
-    margin-left: 30px;
-    margin-top: -20px;
+    margin-top: 5px;
     width: 350px;
-    height: 58px;
+    height: 40px;
+    border: none;
+}
+
+.botao-input {
+    width: 60px;
+    height: 40px;
+    color: #ffff;
+    background-color: var(--night-blue-3);
 }
 
 .lista-menu {
@@ -74,6 +84,26 @@
     display: grid;
     grid-template-columns: 100px 100px;
     font-size: 20px;
+}
+
+.menu-esquerdo h1 {
+    color: #ffff;
+    padding-left: 440px;
+    margin-top: -49px;
+    font-weight: bold;
+    font-family: var(--font-tres);
+    font-size: 21px;
+    cursor: default;
+}
+
+.menu-esquerdo p {
+    color: var(--night-blue-2) ;
+    padding-left: 440px;
+    margin-top: -15px;
+    font-weight: bold;
+    font-family: var(--font-tres);
+    font-size: 25px;
+    cursor: default;
 }
 
 .imagem-login {

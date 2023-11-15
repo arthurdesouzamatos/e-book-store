@@ -9,26 +9,7 @@
     }
 }
 
-/*
-@media (max-width: 1600px) {
 
-    .livros-contetor {
-        margin-left: 20px;
-        grid-column-gap: 210px;
-    }
-
-    .imagem-banner {
-        width: 1200px;
-    }
-
-    .banner-contetor {
-        padding-right: 300px;
-        padding-left: 80px;
-    }
-
-   
- } */
- 
  
  @media (max-width: 1600px) {
 
@@ -104,6 +85,8 @@
             margin-left:  -200px;
         }
     }
+
+
 
 @media (max-width: 1300px) {
 

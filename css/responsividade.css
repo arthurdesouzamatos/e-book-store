@@ -1,4 +1,4 @@
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
     .principal-contentor h1 {
         margin-left: 200px;
     }
@@ -9,7 +9,7 @@
     }
 }
 
-
+/*
 @media (max-width: 1600px) {
 
     .livros-contetor {
@@ -26,26 +26,21 @@
         padding-left: 80px;
     }
 
-    /*Cabecalho*/
-
-    .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
-        margin-left:  -200px;
-    }
- }
+   
+ } */
  
- @media (max-width: 1405px) {
+ 
+ @media (max-width: 1600px) {
 
         .navbar-lateral {
             margin-left: 86%;
         }
 
-        .banner-contetor {
-            padding: 0;
-        }
     
         .imagem-banner {
-            width: 1360px;
-            height: 350px;
+            margin-left: -130px;
+            width: 1200px;
+            height: 450px;
         }
 
         .livro-titulo {
@@ -102,9 +97,17 @@
             margin-left: -200px;
 
         }
+
+        /*Cabecalho*/
+
+        .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
+            margin-left:  -200px;
+        }
     }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+
+
 
     .navbar-lateral {
         margin-top: 6%;
@@ -114,9 +117,9 @@
     /*Carrossel*/
 
     .imagem-banner {
-        width: 1050px;
-        padding-left: 20px;
-        height: 300px;
+        margin-left: -80px;
+        width: 900px;
+        height: 400px;
     }
 
     /*Cabecalho */
@@ -156,8 +159,9 @@
     }
     
     .imagem-banner {
-        width: 1000px;
-        height: 300px;
+        margin-left: -150px;
+        width: 800px;
+        height: 400px;
         padding: 0;
     }
 
@@ -252,6 +256,10 @@
 }
 
 @media (max-width: 500px) {
+
+    .banner-contentor {
+        display: none;
+    }
     
     .barra-meio {
         display: none;
@@ -268,7 +276,7 @@
         display: block;
     }
 
-    .banner-contetor {
+    .banner-contentor {
         display: none;
     }
 

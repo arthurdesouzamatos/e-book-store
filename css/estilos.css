@@ -59,17 +59,17 @@ main {
     background: var(--cor-do-fundo);
 }
 
-.banner-contetor{
+.banner-contentor{
+    background-color: rgb(32, 3, 3);
     padding-right: 510px;
     padding-left: 150px;
-    background-color: var(--cor-azul-dark-4);
-    transition: 300ms ease-in-out;
+   
 }
 
 
 .imagem-banner {
     width: 1300px;
-    height: 380px;
+    height: 500px;
     background: var(--night-blue-4);
 
 }

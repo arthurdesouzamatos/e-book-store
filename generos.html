@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/pages.css">
-    <link rel="stylesheet" href="./css/responsividade.css">
-    <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/rodape.css">
-    <link rel="stylesheet" href="./css/assets.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsividade.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
+  <link rel="stylesheet" href="./css/rodape.css">
+  <link rel="stylesheet" href="./css/assets.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -62,154 +63,723 @@
   </header>
 
   <main>
-    	
+
     <nav class="navbar-lateral">
       <img class="imagens-navbar" src="/Imagens/image.png" alt="">
       <img class="imagens-navbar" src="/Imagens/COMO_BEBER_AGUA.png" alt="">
     </nav>
 
     <div class="principal-contentor">
-    
-    <h1>Aventura</h1>
 
-    <div class="mini-cartao__contentor">
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/pedra-filosofal.jpg" alt=""></a></img>
+      <h1>Ação e Aventura</h1>
+
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/pedra-filosofal.jpg" alt=""></a></img>
+          </div>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
+          </div>
         </div>
 
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/camara-secreta.jpg" alt=""></a></img>
           </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e a Camara Secreta</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
           </div>
-          <i class="bi bi-heart" onclick="like()" id="like"></i>
+
         </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/prisioneiro-askaban.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e o Prisioneiro de Askaban</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/calice-de-fogo.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e o Calice de Fogo</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/ordem-da-fenix.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e a Ordem da Fenix</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+
       </div>
-      
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/camara-secreta.jpg" alt=""></a></img>
+
+      <div class="mini-cartao__contentor">
+
+
+
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/enigma-do-principe.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e o Enigma do Principe</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
         </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/reliquias-da-morte.jpg" alt=""></a></img>
           </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Harry Potter e as Reliquias da Morte</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
           </div>
-          <i class="bi bi-heart" id="like"></i>
+
         </div>
 
       </div>
-      
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/prisioneiro-askaban.jpg" alt=""></a></img>
-        </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
+      <h1>História e Filolosofia</h1>
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Manifesto.jpg" alt=""></a></img>
           </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O Manifesto Do Partido Comunista</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">10,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
           </div>
-          <i class="bi bi-heart" id="like"></i>
         </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Engels.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Do Socialismo Utópico Ao Socialismo Científico</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Safado.webp" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O que Fazer?</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Epiteto.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">A Arte de Viver</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Guerra.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">A Arte Da Guerra</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
 
       </div>
-      
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/calice-de-fogo.jpg" alt=""></a></img>
-        </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Alem-do-bem.jpg" alt=""></a></img>
           </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Além Do Bem E Do Mal</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">20,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
           </div>
-          <i class="bi bi-heart" id="like"></i>
         </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Genealogia.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Sobre a Genealogia da Moral</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/O-Anti-cristo.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O Anticristo</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Nada-Ta-bom.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O Principe</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Num-acaba.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Realismo Capitalista</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 9,99</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
 
       </div>
 
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/ordem-da-fenix.jpg" alt=""></a></img>
-        </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
+
+      <h1>Ficção Científica </h1>
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Ponto-de-impacto.jpg" alt=""></a></img>
           </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Ponto De Ponto De Impacto</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">30,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
           </div>
-          <i class="bi bi-heart" id="like"></i>
         </div>
 
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Blade-Runner.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Blade Runner:Origins</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/os-funcionarios.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Os Funcionarios</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/As dores do mundo.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">As Dores Do Mundo</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Frankamente.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Frankenstein</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 8,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+
       </div>
-      
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Fahrenheit-451.jpg" alt=""></a></img>
+          </div>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Fahrenheit 451</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">20,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
+          </div>
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Projeto.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Projeto 1</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Dracula.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Dracula</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Aquecimento.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">2084</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Corno.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Eu, Robô</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <h1>Infanto Juvenil</h1>
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Coranile.jpg" alt=""></a></img>
+          </div>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Coraline</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">5,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
+          </div>
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/banana 1.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Diario de Um Banana 1</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Banana 2.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Diario de Um Banana 2</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Banana 3.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Diario de Um Banana 3</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Banana 4.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Diario de Um Banana 4</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mini-cartao__contentor">
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/banana 5.jpg" alt=""></a></img>
+          </div>
+
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Diario de Um Banana 5</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">5,00</h4>
+            </div>
+            <i class="bi bi-heart" onclick="like()" id="like"></i>
+          </div>
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Princio.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O Pequeno Principe</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Contos para Garotos.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Contos Para Garotos</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/O livro das virtude.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O Livro das Virtudes</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Maconha.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">O menino do dedo verde</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
+            </div>
+            <i class="bi bi-heart" id="like"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+
 
     </div>
 
-    <div class="mini-cartao__contentor">
-      
-      
-      
-      
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/enigma-do-principe.jpg" alt=""></a></img>
-        </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
-          </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
-          </div>
-          <i class="bi bi-heart" id="like"></i>
-        </div>
 
-      </div>
-      
-      <div class="mini-cartao">
-        <div>
-          <a href="#"><img class="mini-cartao__imagem" src="/livros/reliquias-da-morte.jpg" alt=""></a></img>
-        </div>
-        <div class="mini-cartao__descricao">
-          <h4 class="mini-cartao__titulo">Harry Potter e a Pedra filosofal</h4>
-          <div class="storepass">
-            <p class="storepass__texto">STOREPASS</p>
-          </div>
-          <div class="mini-cartao__preco">
-            <p class="mini-cartao__texto">ou</p>
-            <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
-          </div>
-          <i class="bi bi-heart" id="like"></i>
-        </div>
-
-      </div>
-    
     </div>
-
-  </div>
+    
   </main>
 
   <footer>
@@ -253,6 +823,7 @@
       <p class="texto-rodape">Rodrigo</p>
     </div>
   </footer>
-    
+
 </body>
+
 </html>

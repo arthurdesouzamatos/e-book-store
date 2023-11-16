@@ -14,7 +14,7 @@
  @media (max-width: 1600px) {
 
         .navbar-lateral {
-            margin-left: 86%;
+            margin-left: 82%;
         }
 
     
@@ -82,7 +82,7 @@
         /*Cabecalho*/
 
         .menu-esquerdo, .menu-central, .menu-direito, .barra-meio{
-            margin-left:  -200px;
+            margin-left:  -100px;
         }
     }
 

@@ -86,6 +86,13 @@
         }
     }
 
+@media (max-width: 1400px) {
+    /*página de generos*/
+.mini-cartao__contentor {
+    padding-left: -150px;
+}
+}
+
 
 
 @media (max-width: 1300px) {

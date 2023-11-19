@@ -44,18 +44,18 @@
 
     <div class="barra-meio">
       <ul class="lista-menu">
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Infantil</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Ação e Aventura</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Infanto-juvenil</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">História e Filolosofia</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#infantil">Infantil</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#acaoeaventura">Ação e Aventura</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#infantojuvenil">Infanto-juvenil</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#historiaefilosofia">História e Filolosofia</a></li>
       </ul>
     </div>
     <div class="barra-meio">
       <ul class="lista-menu">
         <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Ficção-científica</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Literatura Nacional</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Lançamentos</a></li>
-        <li class="lista-menu__itens"><a class="lista-menu__links" href="#">Romance</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#livrosnacionais">Livros Nacional</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#recomendados">Para você</a></li>
+        <li class="lista-menu__itens"><a class="lista-menu__links" href="#romance">Romance</a></li>
       </ul>
     </div>
   </header>
@@ -65,7 +65,7 @@
 
     <div class="principal-contentor">
 
-      <h1>Recomendados para você </h1>
+      <h1 id="recomendados">Recomendados para você </h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -81,7 +81,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">10,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -98,7 +98,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -116,7 +116,43 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/UUU MISTERIO.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">A Ilha Misteriosa</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id=""></i>
+          </div>
+
+        </div>
+
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/Animais poggers.webp" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">Animais Fantásticos e Onde Habitam</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
+            </div>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -124,195 +160,9 @@
       </div>
 
 
-      <h1>Lançamentos</h1>
-      <div class="mini-cartao__contentor">
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Uma breve história do tempo.jpg" alt=""></a></img>
-          </div>
+      
 
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Uma breve história do tempo</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">10,00</h4>
-            </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
-          </div>
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Meditações.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Meditações</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/O Manuscrito.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">As leis do triunfo e do sucesso de Napoleon Hill</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Sobrevivendo no inferno Capa.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Sobrevivendo no inferno Capa</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/O Ceifador.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">O Ceifador</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-
-      </div>
-      <div class="mini-cartao__contentor">
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/História.jpg" alt=""></a></img>
-          </div>
-
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">História secreta da rendição japonesa de 1945</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">20,00</h4>
-            </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
-          </div>
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Nada.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Nada de Novo no Front</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Escravidao.png" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Escravidão</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Lenda.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Eu Sou A Lenda</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Capitalismo.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Capitalismo e escravidão</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 9,99</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <h1>Romance</h1>
+      <h1 id="romance">Romance</h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -328,7 +178,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">10,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -345,7 +195,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -363,7 +213,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -381,7 +231,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -399,7 +249,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -421,7 +271,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -438,7 +288,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -456,7 +306,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -474,7 +324,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -492,7 +342,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 9,99</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -500,7 +350,7 @@
 
       </div>
 
-      <h1>Ação e Aventura</h1>
+      <h1 id="acaoeaventura">Ação e Aventura</h1>
 
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
@@ -517,7 +367,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -534,7 +384,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -552,7 +402,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -570,7 +420,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -588,7 +438,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -614,7 +464,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -632,7 +482,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -650,7 +500,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -668,7 +518,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -686,7 +536,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 15,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -694,7 +544,7 @@
         
 
       </div>
-      <h1>História e Filolosofia</h1>
+      <h1 id="historiaefilosofia">História e Filolosofia</h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -710,7 +560,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">10,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -727,7 +577,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -745,7 +595,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -763,7 +613,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -781,7 +631,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -803,7 +653,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -820,7 +670,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -838,7 +688,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -856,7 +706,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -874,7 +724,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 9,99</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -885,7 +735,7 @@
       
 
 
-      <h1>Ficção Científica </h1>
+      <h1 id="ficcaocientifica">Ficção Científica </h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -901,7 +751,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">30,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -918,7 +768,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -936,7 +786,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -954,7 +804,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -972,7 +822,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 8,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -994,7 +844,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1011,7 +861,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1029,7 +879,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1047,7 +897,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1065,7 +915,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1073,7 +923,7 @@
 
       </div>
 
-      <h1>Livros Nacionais</h1>
+      <h1 id="livrosnacionais">Livros Nacionais</h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -1089,7 +939,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">30,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1106,7 +956,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1124,7 +974,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1142,7 +992,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1160,7 +1010,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1182,7 +1032,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1199,7 +1049,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1217,7 +1067,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1235,7 +1085,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1253,7 +1103,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1261,7 +1111,7 @@
 
       </div>
 
-      <h1>Infantil</h1>
+      <h1 id="infantil">Infantil</h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -1277,7 +1127,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1294,28 +1144,11 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
 
-        <div class="mini-cartao">
-          <div>
-            <a href="#"><img class="mini-cartao__imagem" src="/livros/Xixi Coco KLKKKKKKK.jpg" alt=""></a></img>
-          </div>
-          <div class="mini-cartao__descricao">
-            <h4 class="mini-cartao__titulo">Coco Xixi e Pum</h4>
-            <div class="storepass">
-              <p class="storepass__texto">STOREPASS</p>
-            </div>
-            <div class="mini-cartao__preco">
-              <p class="mini-cartao__texto">ou</p>
-              <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
-            </div>
-            <i class="bi bi-heart" id="like"></i>
-          </div>
-
-        </div>
 
         <div class="mini-cartao">
           <div>
@@ -1330,7 +1163,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1348,13 +1181,30 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
+          </div>
+
+        </div>
+        <div class="mini-cartao">
+          <div>
+            <a href="#"><img class="mini-cartao__imagem" src="/livros/a-saga-wingfeather.jpg" alt=""></a></img>
+          </div>
+          <div class="mini-cartao__descricao">
+            <h4 class="mini-cartao__titulo">A Saga Wingfeather - livro 1</h4>
+            <div class="storepass">
+              <p class="storepass__texto">STOREPASS</p>
+            </div>
+            <div class="mini-cartao__preco">
+              <p class="mini-cartao__texto">ou</p>
+              <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
+            </div>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
 
-
       </div>
+
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -1370,7 +1220,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">20,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1387,7 +1237,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 20,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1405,7 +1255,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1423,7 +1273,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 25,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1441,7 +1291,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1450,7 +1300,7 @@
       </div>
       
     
-      <h1>Infanto Juvenil</h1>
+      <h1 id="infantojuvenil">Infanto Juvenil</h1>
       <div class="mini-cartao__contentor">
         <div class="mini-cartao">
           <div>
@@ -1466,7 +1316,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">5,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1483,7 +1333,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1501,7 +1351,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1519,7 +1369,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1537,7 +1387,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1559,7 +1409,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">5,00</h4>
             </div>
-            <i class="bi bi-heart" onclick="like()" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
         </div>
 
@@ -1576,7 +1426,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 10,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1594,7 +1444,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1612,7 +1462,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 5,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1630,7 +1480,7 @@
               <p class="mini-cartao__texto">ou</p>
               <h4 class="mini-cartao__titulo_2">R$ 30,00</h4>
             </div>
-            <i class="bi bi-heart" id="like"></i>
+            <i class="bi bi-heart" id=""></i>
           </div>
 
         </div>
@@ -1638,41 +1488,7 @@
 
       </div>
 
-      <h1>Temos Ofertas Especiais pra Você!</h1>
-
-      <div class="propaganda-ebookstore__contentor">
-        <img class="imagem-propaganda__ebookstore" src="/Imagens/OIG.25bqGWDCXhOgkw3P7.jpg" alt="">
-        <div class="propaganda-ebookstore__descricao">
-          <h2 class="propaganda-ebookstore__titulo">Leia seus livros em qualquer lugar!</h2>
-          <p class="propaganda-ebookstore__texto">Você gosta de ler, mas não tem tempo ou espaço para carregar livros impressos? Então você precisa conhecer os ebooks, os livros digitais que você pode ler em qualquer lugar, a qualquer hora, no seu computador, celular, tablet ou e-reader. </p>
-        </div>
-
-      </div>
-
-      <div class="propaganda-ebookstore__contentor">
-        <img class="imagem-propaganda__ebookstore" src="/Imagens/OIG.D0__W0oQN.jpg" alt="">
-
-        <div class="propaganda-ebookstore__descricao">
-
-          <h2 class="propaganda-ebookstore__titulo">STOREPASS ANUAL</h2>
-          <p class="propaganda-ebookstore__texto"> Não perca tempo e aproveite as vantagens exclusivas de ser um assinante da nossa loja. Você terá acesso ilimitado a todos os ebooks do nosso catálogo </p>
-          <p class="propaganda-ebookstore__texto">Assine já por <b>R$ 299,90 ou 12x de 24,99</b> e garanta seu acesso a um mundo de conhecimento e diversão.</p>
-        </div>
-        
-      </div>
-
-      <div class="propaganda-ebookstore__contentor">
-        <img class="imagem-propaganda__ebookstore" src="/Imagens/OIG (1).jpg" alt="">
-
-        <div class="propaganda-ebookstore__descricao">
-
-          <h2 class="propaganda-ebookstore__titulo">STOREPASS MENSAL</h2>
-          <p class="propaganda-ebookstore__texto"> Não perca tempo e aproveite as vantagens exclusivas de ser um assinante da nossa loja. Você terá acesso ilimitado a todos os ebooks do nosso catálogo </p>
-          <p class="propaganda-ebookstore__texto">Assine já por mensalidade de <b>R$ 39,90</b> e garanta seu acesso a um mundo de conhecimento e diversão.</p>
-        </div>
-        
-      </div>
-      
+            
 
     </div>
 

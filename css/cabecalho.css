@@ -72,6 +72,10 @@
     color: #ffff;
 }
 
+.lista-menu__links:hover {
+    text-decoration: none;
+}
+
 .menu-direito__itens {
     margin-top: 50px;
     list-style-type: none;
@@ -80,6 +84,10 @@
 .menu-direito__link {
     text-decoration: none;
     color: #ffff;
+}
+
+.menu-direito__link:hover {
+    text-decoration: none;
 }
 
 .menu-direito {

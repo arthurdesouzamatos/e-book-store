@@ -1,0 +1,959 @@
+////////////////////////////////////////////
+// BEGIN ASSET BooksDesignSystemWebBuzzAssets@BaseAssets-1.0.244.0
+/////////////////////////
+// BEGIN FILE bds-hns-integration.js
+/////////////////////////
+/*
+
+
+Full source (including license, if applicable) included below.
+*/
+window.BDS = window.BDS || {};
+window.BDS.enableHNSIntegration = false;
+/////////////////////////
+// END FILE bds-hns-integration.js
+/////////////////////////
+/////////////////////////
+// BEGIN FILE bds-base-assets.js
+/////////////////////////
+/*
+
+
+Full source (including license, if applicable) included below.
+*/
+!function(e){function t(e,t,i,o){var r,s=arguments.length,n=s<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)n=Reflect.decorate(e,t,i,o);else for(var a=e.length-1;a>=0;a--)(r=e[a])&&(n=(s<3?r(n):s>3?r(t,i,n):r(t,i))||n);return s>3&&n&&Object.defineProperty(t,i,n),n}function i(e,t){var i=Object.keys(e);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);t&&(o=o.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),i.push.apply(i,o)}return i}function o(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};t%2?i(Object(o),!0).forEach((function(t){s(e,t,o[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(o)):i(Object(o)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))}))}return e}function r(e,t,i,o,r,s,n){try{var a=e[s](n),l=a.value}catch(e){return void i(e)}a.done?t(l):Promise.resolve(l).then(o,r)}function s(e,t,i){return(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var i=e[Symbol.toPrimitive];if(void 0!==i){var o=i.call(e,t||"default");if("object"!=typeof o)return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}
+/**
+     * @license
+     * Copyright 2019 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */(t))in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}var n=window,a=n.ShadowRoot&&(void 0===n.ShadyCSS||n.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,l=Symbol(),d=new WeakMap;class h{constructor(e,t,i){if(this._$cssResult$=!0,i!==l)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=e,this.t=t}get styleSheet(){var e=this.o,t=this.t;if(a&&void 0===e){var i=void 0!==t&&1===t.length;i&&(e=d.get(t)),void 0===e&&((this.o=e=new CSSStyleSheet).replaceSync(this.cssText),i&&d.set(t,e))}return e}toString(){return this.cssText}}var c,p,g=function(e){for(var t=arguments.length,i=new Array(t>1?t-1:0),o=1;o<t;o++)i[o-1]=arguments[o];var r=1===e.length?e[0]:i.reduce(((t,i,o)=>t+(e=>{if(!0===e._$cssResult$)return e.cssText;if("number"==typeof e)return e;throw Error("Value passed to 'css' function must be a 'css' function result: "+e+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(i)+e[o+1]),e[0]);return new h(r,e,l)},v=a?e=>e:e=>e instanceof CSSStyleSheet?(e=>{var t="";for(var i of e.cssRules)t+=i.cssText;return(e=>new h("string"==typeof e?e:e+"",void 0,l))(t)})(e):e
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */,u=window,b=u.trustedTypes,m=b?b.emptyScript:"",y=u.reactiveElementPolyfillSupport,f={toAttribute(e,t){switch(t){case Boolean:e=e?m:null;break;case Object:case Array:e=null==e?e:JSON.stringify(e)}return e},fromAttribute(e,t){var i=e;switch(t){case Boolean:i=null!==e;break;case Number:i=null===e?null:Number(e);break;case Object:case Array:try{i=JSON.parse(e)}catch(e){i=null}}return i}},k=(e,t)=>t!==e&&(t==t||e==e),x={attribute:!0,type:String,converter:f,reflect:!1,hasChanged:k};class $ extends HTMLElement{constructor(){super(),this._$Ei=new Map,this.isUpdatePending=!1,this.hasUpdated=!1,this._$El=null,this.u()}static addInitializer(e){var t;this.finalize(),(null!==(t=this.h)&&void 0!==t?t:this.h=[]).push(e)}static get observedAttributes(){this.finalize();var e=[];return this.elementProperties.forEach(((t,i)=>{var o=this._$Ep(i,t);void 0!==o&&(this._$Ev.set(o,i),e.push(o))})),e}static createProperty(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:x;if(t.state&&(t.attribute=!1),this.finalize(),this.elementProperties.set(e,t),!t.noAccessor&&!this.prototype.hasOwnProperty(e)){var i="symbol"==typeof e?Symbol():"__"+e,o=this.getPropertyDescriptor(e,i,t);void 0!==o&&Object.defineProperty(this.prototype,e,o)}}static getPropertyDescriptor(e,t,i){return{get(){return this[t]},set(o){var r=this[e];this[t]=o,this.requestUpdate(e,r,i)},configurable:!0,enumerable:!0}}static getPropertyOptions(e){return this.elementProperties.get(e)||x}static finalize(){if(this.hasOwnProperty("finalized"))return!1;this.finalized=!0;var e=Object.getPrototypeOf(this);if(e.finalize(),void 0!==e.h&&(this.h=[...e.h]),this.elementProperties=new Map(e.elementProperties),this._$Ev=new Map,this.hasOwnProperty("properties")){var t=this.properties,i=[...Object.getOwnPropertyNames(t),...Object.getOwnPropertySymbols(t)];for(var o of i)this.createProperty(o,t[o])}return this.elementStyles=this.finalizeStyles(this.styles),!0}static finalizeStyles(e){var t=[];if(Array.isArray(e)){var i=new Set(e.flat(1/0).reverse());for(var o of i)t.unshift(v(o))}else void 0!==e&&t.push(v(e));return t}static _$Ep(e,t){var i=t.attribute;return!1===i?void 0:"string"==typeof i?i:"string"==typeof e?e.toLowerCase():void 0}u(){var e;this._$E_=new Promise((e=>this.enableUpdating=e)),this._$AL=new Map,this._$Eg(),this.requestUpdate(),null===(e=this.constructor.h)||void 0===e||e.forEach((e=>e(this)))}addController(e){var t,i;(null!==(t=this._$ES)&&void 0!==t?t:this._$ES=[]).push(e),void 0!==this.renderRoot&&this.isConnected&&(null===(i=e.hostConnected)||void 0===i||i.call(e))}removeController(e){var t;null===(t=this._$ES)||void 0===t||t.splice(this._$ES.indexOf(e)>>>0,1)}_$Eg(){this.constructor.elementProperties.forEach(((e,t)=>{this.hasOwnProperty(t)&&(this._$Ei.set(t,this[t]),delete this[t])}))}createRenderRoot(){var e,t=null!==(e=this.shadowRoot)&&void 0!==e?e:this.attachShadow(this.constructor.shadowRootOptions);return((e,t)=>{a?e.adoptedStyleSheets=t.map((e=>e instanceof CSSStyleSheet?e:e.styleSheet)):t.forEach((t=>{var i=document.createElement("style"),o=n.litNonce;void 0!==o&&i.setAttribute("nonce",o),i.textContent=t.cssText,e.appendChild(i)}))})(t,this.constructor.elementStyles),t}connectedCallback(){var e;void 0===this.renderRoot&&(this.renderRoot=this.createRenderRoot()),this.enableUpdating(!0),null===(e=this._$ES)||void 0===e||e.forEach((e=>{var t;return null===(t=e.hostConnected)||void 0===t?void 0:t.call(e)}))}enableUpdating(e){}disconnectedCallback(){var e;null===(e=this._$ES)||void 0===e||e.forEach((e=>{var t;return null===(t=e.hostDisconnected)||void 0===t?void 0:t.call(e)}))}attributeChangedCallback(e,t,i){this._$AK(e,i)}_$EO(e,t){var i,o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:x,r=this.constructor._$Ep(e,o);if(void 0!==r&&!0===o.reflect){var s=(void 0!==(null===(i=o.converter)||void 0===i?void 0:i.toAttribute)?o.converter:f).toAttribute(t,o.type);this._$El=e,null==s?this.removeAttribute(r):this.setAttribute(r,s),this._$El=null}}_$AK(e,t){var i,o=this.constructor,r=o._$Ev.get(e);if(void 0!==r&&this._$El!==r){var s=o.getPropertyOptions(r),n="function"==typeof s.converter?{fromAttribute:s.converter}:void 0!==(null===(i=s.converter)||void 0===i?void 0:i.fromAttribute)?s.converter:f;this._$El=r,this[r]=n.fromAttribute(t,s.type),this._$El=null}}requestUpdate(e,t,i){var o=!0;void 0!==e&&(((i=i||this.constructor.getPropertyOptions(e)).hasChanged||k)(this[e],t)?(this._$AL.has(e)||this._$AL.set(e,t),!0===i.reflect&&this._$El!==e&&(void 0===this._$EC&&(this._$EC=new Map),this._$EC.set(e,i))):o=!1),!this.isUpdatePending&&o&&(this._$E_=this._$Ej())}_$Ej(){var e,t=this;return(e=function*(){t.isUpdatePending=!0;try{yield t._$E_}catch(e){Promise.reject(e)}var e=t.scheduleUpdate();return null!=e&&(yield e),!t.isUpdatePending},function(){var t=this,i=arguments;return new Promise((function(o,s){var n=e.apply(t,i);function a(e){r(n,o,s,a,l,"next",e)}function l(e){r(n,o,s,a,l,"throw",e)}a(void 0)}))})()}scheduleUpdate(){return this.performUpdate()}performUpdate(){var e;if(this.isUpdatePending){this.hasUpdated,this._$Ei&&(this._$Ei.forEach(((e,t)=>this[t]=e)),this._$Ei=void 0);var t=!1,i=this._$AL;try{(t=this.shouldUpdate(i))?(this.willUpdate(i),null===(e=this._$ES)||void 0===e||e.forEach((e=>{var t;return null===(t=e.hostUpdate)||void 0===t?void 0:t.call(e)})),this.update(i)):this._$Ek()}catch(e){throw t=!1,this._$Ek(),e}t&&this._$AE(i)}}willUpdate(e){}_$AE(e){var t;null===(t=this._$ES)||void 0===t||t.forEach((e=>{var t;return null===(t=e.hostUpdated)||void 0===t?void 0:t.call(e)})),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(e)),this.updated(e)}_$Ek(){this._$AL=new Map,this.isUpdatePending=!1}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$E_}shouldUpdate(e){return!0}update(e){void 0!==this._$EC&&(this._$EC.forEach(((e,t)=>this._$EO(t,this[t],e))),this._$EC=void 0),this._$Ek()}updated(e){}firstUpdated(e){}}$.finalized=!0,$.elementProperties=new Map,$.elementStyles=[],$.shadowRootOptions={mode:"open"},null==y||y({ReactiveElement:$}),(null!==(c=u.reactiveElementVersions)&&void 0!==c?c:u.reactiveElementVersions=[]).push("1.6.1");var S=window,C=S.trustedTypes,T=C?C.createPolicy("lit-html",{createHTML:e=>e}):void 0,_="$lit$",A="lit$".concat((Math.random()+"").slice(9),"$"),w="?"+A,B="<".concat(w,">"),P=document,z=()=>P.createComment(""),R=e=>null===e||"object"!=typeof e&&"function"!=typeof e,I=Array.isArray,E="[ \t\n\f\r]",U=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,O=/-->/g,L=/>/g,M=RegExp(">|".concat(E,"(?:([^\\s\"'>=/]+)(").concat(E,"*=").concat(E,"*(?:[^ \t\n\f\r\"'`<>=]|(\"|')|))|$)"),"g"),F=/'/g,N=/"/g,H=/^(?:script|style|textarea|title)$/i,D=(e=>function(t){for(var i=arguments.length,o=new Array(i>1?i-1:0),r=1;r<i;r++)o[r-1]=arguments[r];return{_$litType$:e,strings:t,values:o}})(1),j=Symbol.for("lit-noChange"),G=Symbol.for("lit-nothing"),V=new WeakMap,W=P.createTreeWalker(P,129,null,!1),q=(e,t)=>{for(var i,o=e.length-1,r=[],s=2===t?"<svg>":"",n=U,a=0;a<o;a++){for(var l=e[a],d=void 0,h=void 0,c=-1,p=0;p<l.length&&(n.lastIndex=p,null!==(h=n.exec(l)));)p=n.lastIndex,n===U?"!--"===h[1]?n=O:void 0!==h[1]?n=L:void 0!==h[2]?(H.test(h[2])&&(i=RegExp("</"+h[2],"g")),n=M):void 0!==h[3]&&(n=M):n===M?">"===h[0]?(n=null!=i?i:U,c=-1):void 0===h[1]?c=-2:(c=n.lastIndex-h[2].length,d=h[1],n=void 0===h[3]?M:'"'===h[3]?N:F):n===N||n===F?n=M:n===O||n===L?n=U:(n=M,i=void 0);var g=n===M&&e[a+1].startsWith("/>")?" ":"";s+=n===U?l+B:c>=0?(r.push(d),l.slice(0,c)+_+l.slice(c)+A+g):l+A+(-2===c?(r.push(void 0),a):g)}var v=s+(e[o]||"<?>")+(2===t?"</svg>":"");if(!Array.isArray(e)||!e.hasOwnProperty("raw"))throw Error("invalid template strings array");return[void 0!==T?T.createHTML(v):v,r]};class K{constructor(e,t){var i,{strings:o,_$litType$:r}=e;this.parts=[];var s=0,n=0,a=o.length-1,l=this.parts,[d,h]=q(o,r);if(this.el=K.createElement(d,t),W.currentNode=this.el.content,2===r){var c=this.el.content,p=c.firstChild;p.remove(),c.append(...p.childNodes)}for(;null!==(i=W.nextNode())&&l.length<a;){if(1===i.nodeType){if(i.hasAttributes()){var g=[];for(var v of i.getAttributeNames())if(v.endsWith(_)||v.startsWith(A)){var u=h[n++];if(g.push(v),void 0!==u){var b=i.getAttribute(u.toLowerCase()+_).split(A),m=/([.?@])?(.*)/.exec(u);l.push({type:1,index:s,name:m[2],strings:b,ctor:"."===m[1]?Z:"?"===m[1]?te:"@"===m[1]?ie:Q})}else l.push({type:6,index:s})}for(var y of g)i.removeAttribute(y)}if(H.test(i.tagName)){var f=i.textContent.split(A),k=f.length-1;if(k>0){i.textContent=C?C.emptyScript:"";for(var x=0;x<k;x++)i.append(f[x],z()),W.nextNode(),l.push({type:2,index:++s});i.append(f[k],z())}}}else if(8===i.nodeType)if(i.data===w)l.push({type:2,index:s});else for(var $=-1;-1!==($=i.data.indexOf(A,$+1));)l.push({type:7,index:s}),$+=A.length-1;s++}}static createElement(e,t){var i=P.createElement("template");return i.innerHTML=e,i}}function X(e,t){var i,o,r,s,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:e,a=arguments.length>3?arguments[3]:void 0;if(t===j)return t;var l=void 0!==a?null===(i=n._$Co)||void 0===i?void 0:i[a]:n._$Cl,d=R(t)?void 0:t._$litDirective$;return(null==l?void 0:l.constructor)!==d&&(null===(o=null==l?void 0:l._$AO)||void 0===o||o.call(l,!1),void 0===d?l=void 0:(l=new d(e))._$AT(e,n,a),void 0!==a?(null!==(r=(s=n)._$Co)&&void 0!==r?r:s._$Co=[])[a]=l:n._$Cl=l),void 0!==l&&(t=X(e,l._$AS(e,t.values),l,a)),t}class Y{constructor(e,t){this._$AV=[],this._$AN=void 0,this._$AD=e,this._$AM=t}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}u(e){var t,{el:{content:i},parts:o}=this._$AD,r=(null!==(t=null==e?void 0:e.creationScope)&&void 0!==t?t:P).importNode(i,!0);W.currentNode=r;for(var s=W.nextNode(),n=0,a=0,l=o[0];void 0!==l;){if(n===l.index){var d=void 0;2===l.type?d=new J(s,s.nextSibling,this,e):1===l.type?d=new l.ctor(s,l.name,l.strings,this,e):6===l.type&&(d=new oe(s,this,e)),this._$AV.push(d),l=o[++a]}n!==(null==l?void 0:l.index)&&(s=W.nextNode(),n++)}return r}v(e){var t=0;for(var i of this._$AV)void 0!==i&&(void 0!==i.strings?(i._$AI(e,i,t),t+=i.strings.length-2):i._$AI(e[t])),t++}}class J{constructor(e,t,i,o){var r;this.type=2,this._$AH=G,this._$AN=void 0,this._$AA=e,this._$AB=t,this._$AM=i,this.options=o,this._$Cp=null===(r=null==o?void 0:o.isConnected)||void 0===r||r}get _$AU(){var e,t;return null!==(t=null===(e=this._$AM)||void 0===e?void 0:e._$AU)&&void 0!==t?t:this._$Cp}get parentNode(){var e=this._$AA.parentNode,t=this._$AM;return void 0!==t&&11===(null==e?void 0:e.nodeType)&&(e=t.parentNode),e}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(e){e=X(this,e,arguments.length>1&&void 0!==arguments[1]?arguments[1]:this),R(e)?e===G||null==e||""===e?(this._$AH!==G&&this._$AR(),this._$AH=G):e!==this._$AH&&e!==j&&this._(e):void 0!==e._$litType$?this.g(e):void 0!==e.nodeType?this.$(e):(e=>I(e)||"function"==typeof(null==e?void 0:e[Symbol.iterator]))(e)?this.T(e):this._(e)}k(e){return this._$AA.parentNode.insertBefore(e,this._$AB)}$(e){this._$AH!==e&&(this._$AR(),this._$AH=this.k(e))}_(e){this._$AH!==G&&R(this._$AH)?this._$AA.nextSibling.data=e:this.$(P.createTextNode(e)),this._$AH=e}g(e){var t,{values:i,_$litType$:o}=e,r="number"==typeof o?this._$AC(e):(void 0===o.el&&(o.el=K.createElement(o.h,this.options)),o);if((null===(t=this._$AH)||void 0===t?void 0:t._$AD)===r)this._$AH.v(i);else{var s=new Y(r,this),n=s.u(this.options);s.v(i),this.$(n),this._$AH=s}}_$AC(e){var t=V.get(e.strings);return void 0===t&&V.set(e.strings,t=new K(e)),t}T(e){I(this._$AH)||(this._$AH=[],this._$AR());var t,i=this._$AH,o=0;for(var r of e)o===i.length?i.push(t=new J(this.k(z()),this.k(z()),this,this.options)):t=i[o],t._$AI(r),o++;o<i.length&&(this._$AR(t&&t._$AB.nextSibling,o),i.length=o)}_$AR(){var e,t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:this._$AA.nextSibling,i=arguments.length>1?arguments[1]:void 0;for(null===(e=this._$AP)||void 0===e||e.call(this,!1,!0,i);t&&t!==this._$AB;){var o=t.nextSibling;t.remove(),t=o}}setConnected(e){var t;void 0===this._$AM&&(this._$Cp=e,null===(t=this._$AP)||void 0===t||t.call(this,e))}}class Q{constructor(e,t,i,o,r){this.type=1,this._$AH=G,this._$AN=void 0,this.element=e,this.name=t,this._$AM=o,this.options=r,i.length>2||""!==i[0]||""!==i[1]?(this._$AH=Array(i.length-1).fill(new String),this.strings=i):this._$AH=G}get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}_$AI(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:this,i=arguments.length>2?arguments[2]:void 0,o=arguments.length>3?arguments[3]:void 0,r=this.strings,s=!1;if(void 0===r)e=X(this,e,t,0),(s=!R(e)||e!==this._$AH&&e!==j)&&(this._$AH=e);else{var n,a,l=e;for(e=r[0],n=0;n<r.length-1;n++)(a=X(this,l[i+n],t,n))===j&&(a=this._$AH[n]),s||(s=!R(a)||a!==this._$AH[n]),a===G?e=G:e!==G&&(e+=(null!=a?a:"")+r[n+1]),this._$AH[n]=a}s&&!o&&this.j(e)}j(e){e===G?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,null!=e?e:"")}}class Z extends Q{constructor(){super(...arguments),this.type=3}j(e){this.element[this.name]=e===G?void 0:e}}var ee=C?C.emptyScript:"";class te extends Q{constructor(){super(...arguments),this.type=4}j(e){e&&e!==G?this.element.setAttribute(this.name,ee):this.element.removeAttribute(this.name)}}class ie extends Q{constructor(e,t,i,o,r){super(e,t,i,o,r),this.type=5}_$AI(e){var t;if((e=null!==(t=X(this,e,arguments.length>1&&void 0!==arguments[1]?arguments[1]:this,0))&&void 0!==t?t:G)!==j){var i=this._$AH,o=e===G&&i!==G||e.capture!==i.capture||e.once!==i.once||e.passive!==i.passive,r=e!==G&&(i===G||o);o&&this.element.removeEventListener(this.name,this,i),r&&this.element.addEventListener(this.name,this,e),this._$AH=e}}handleEvent(e){var t,i;"function"==typeof this._$AH?this._$AH.call(null!==(i=null===(t=this.options)||void 0===t?void 0:t.host)&&void 0!==i?i:this.element,e):this._$AH.handleEvent(e)}}class oe{constructor(e,t,i){this.element=e,this.type=6,this._$AN=void 0,this._$AM=t,this.options=i}get _$AU(){return this._$AM._$AU}_$AI(e){X(this,e)}}var re=S.litHtmlPolyfillSupport;null==re||re(K,J),(null!==(p=S.litHtmlVersions)&&void 0!==p?p:S.litHtmlVersions=[]).push("2.7.2");var se,ne;
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */class ae extends ${constructor(){super(...arguments),this.renderOptions={host:this},this._$Do=void 0}createRenderRoot(){var e,t,i=super.createRenderRoot();return null!==(e=(t=this.renderOptions).renderBefore)&&void 0!==e||(t.renderBefore=i.firstChild),i}update(e){var t=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(e),this._$Do=((e,t,i)=>{var o,r,s=null!==(o=null==i?void 0:i.renderBefore)&&void 0!==o?o:t,n=s._$litPart$;if(void 0===n){var a=null!==(r=null==i?void 0:i.renderBefore)&&void 0!==r?r:null;s._$litPart$=n=new J(t.insertBefore(z(),a),a,void 0,null!=i?i:{})}return n._$AI(e),n})(t,this.renderRoot,this.renderOptions)}connectedCallback(){var e;super.connectedCallback(),null===(e=this._$Do)||void 0===e||e.setConnected(!0)}disconnectedCallback(){var e;super.disconnectedCallback(),null===(e=this._$Do)||void 0===e||e.setConnected(!1)}render(){return j}}ae.finalized=!0,ae._$litElement$=!0,null===(se=globalThis.litElementHydrateSupport)||void 0===se||se.call(globalThis,{LitElement:ae});var le=globalThis.litElementPolyfillSupport;null==le||le({LitElement:ae}),(null!==(ne=globalThis.litElementVersions)&&void 0!==ne?ne:globalThis.litElementVersions=[]).push("3.3.1");
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+class de extends Event{constructor(e,t,i){super("context-request",{bubbles:!0,composed:!0}),this.context=e,this.callback=t,this.subscribe=i}}
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+class he{constructor(e,t,i,o){var r;if(this.subscribe=!1,this.provided=!1,this.value=void 0,this.t=(e,t)=>{this.unsubscribe&&(this.unsubscribe!==t&&(this.provided=!1,this.unsubscribe()),this.subscribe||this.unsubscribe()),this.value=e,this.host.requestUpdate(),this.provided&&!this.subscribe||(this.provided=!0,this.callback&&this.callback(e,t)),this.unsubscribe=t},this.host=e,void 0!==t.context){var s=t;this.context=s.context,this.callback=s.callback,this.subscribe=null!==(r=s.subscribe)&&void 0!==r&&r}else this.context=t,this.callback=i,this.subscribe=null!=o&&o;this.host.addController(this)}hostConnected(){this.dispatchRequest()}hostDisconnected(){this.unsubscribe&&(this.unsubscribe(),this.unsubscribe=void 0)}dispatchRequest(){this.host.dispatchEvent(new de(this.context,this.t,this.subscribe))}}
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */class ce{constructor(e){this.callbacks=new Map,this.updateObservers=()=>{for(var[e,t]of this.callbacks)e(this.o,t)},void 0!==e&&(this.value=e)}get value(){return this.o}set value(e){this.setValue(e)}setValue(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1]||!Object.is(e,this.o);this.o=e,t&&this.updateObservers()}addCallback(e,t){t&&(this.callbacks.has(e)||this.callbacks.set(e,(()=>{this.callbacks.delete(e)}))),e(this.value)}clearCallbacks(){this.callbacks.clear()}}
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */class pe extends Event{constructor(e){super("context-provider",{bubbles:!0,composed:!0}),this.context=e,Object.setPrototypeOf(this,new.target.prototype)}}class ge extends ce{constructor(e,t,i){super(void 0!==t.context?t.initialValue:i),this.onContextRequest=e=>{e.context===this.context&&e.composedPath()[0]!==this.host&&(e.stopPropagation(),this.addCallback(e.callback,e.subscribe))},this.host=e,void 0!==t.context?this.context=t.context:this.context=t,this.attachListeners(),this.host.addController(this)}attachListeners(){this.host.addEventListener("context-request",this.onContextRequest)}hostConnected(){this.host.dispatchEvent(new pe(this.context))}}
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+/**
+     * @license
+     * Copyright 2022 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+function ve(e){var{context:t,subscribe:i}=e;return(e=>{var{finisher:t,descriptor:i}=e;return(e,r)=>{var s;if(void 0===r){var n=null!==(s=e.originalKey)&&void 0!==s?s:e.key,a=null!=i?{kind:"method",placement:"prototype",key:n,descriptor:i(e.key)}:o(o({},e),{},{key:n});return null!=t&&(a.finisher=function(e){t(e,n)}),a}var l=e.constructor;void 0!==i&&Object.defineProperty(e,r,i(r)),null==t||t(l,r)}})({finisher:(e,o)=>{e.addInitializer((e=>{new he(e,{context:t,callback:t=>{e[o]=t},subscribe:i})}))}})}
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */var ue,be=(e,t)=>"method"===t.kind&&t.descriptor&&!("value"in t.descriptor)?o(o({},t),{},{finisher(i){i.createProperty(t.key,e)}}):{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:t.key,initializer(){"function"==typeof t.initializer&&(this[t.key]=t.initializer.call(this))},finisher(i){i.createProperty(t.key,e)}};
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */function me(e){return(t,i)=>void 0!==i?((e,t,i)=>{t.constructor.createProperty(i,e)})(e,t,i):be(e,t)}
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */function ye(e){return me(o(o({},e),{},{state:!0}))}
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */null===(ue=window.HTMLSlotElement)||void 0===ue||ue.prototype.assignedElements;const fe="render-context",ke=e=>customElements.get(e)?(console.warn(`BDS Custom Element '${e}' already defined, will not re-define`),()=>{}):(e=>t=>"function"==typeof t?((e,t)=>(customElements.define(e,t),t))(e,t):((e,t)=>{var{kind:i,elements:o}=t;return{kind:i,elements:o,finisher(t){customElements.define(e,t)}}})(e,t))(e);e.RenderContextProvider=class extends ae{constructor(){super(...arguments),this.marketplace="default",this.devicetype="default",this.operatingsystem="default",this.hostapplication="default",this.pagetype="default",this.theme="light",this.locale="en-US",this.renderContext=new ge(this,{context:fe,initialValue:{marketplace:this.marketplace,devicetype:this.devicetype,operatingsystem:this.operatingsystem,hostapplication:this.hostapplication,pagetype:this.pagetype,theme:this.theme,locale:this.locale}})}attributeChangedCallback(e,t,i){super.attributeChangedCallback(e,t,i),this.renderContext.setValue(Object.assign(Object.assign({},this.renderContext.value),{[e]:i}))}render(){return D`<slot></slot>`}},t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"marketplace",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"devicetype",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"operatingsystem",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"hostapplication",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"pagetype",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"theme",void 0),t([me({type:String,reflect:!0})],e.RenderContextProvider.prototype,"locale",void 0),e.RenderContextProvider=t([ke("bds-render-context-provider")],e.RenderContextProvider);var xe=g`
+    .coverImageWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: var(--bds-size-spacing-micro);
+    }
+
+    .programBadge,
+    .coverImage {
+        max-width: 100%;
+    }
+`;const $e=["theme","pagetype","devicetype","operatingsystem","hostapplication","locale","marketplace"];function Se(e,t,i){if(!t||!i)return e;let o=Object.assign({},e);return t.filter((e=>function(e,t){return Object.keys(e).every((i=>e[i]===t[i]))}(e.targeting,i))).sort(((e,t)=>function(e,t){const i=Object.keys(e.targeting).length-Object.keys(t.targeting).length;if(0!==i)return i;let o=0,r=0,s=0;const n=Object.keys(e.targeting),a=Object.keys(t.targeting);for(let e=0;e<n.length;e++){const t=$e.indexOf(n[e]),i=$e.indexOf(a[e]);o+=t-i,r=t>r?t:r,s=i>s?i:s}return 0===o?r-s:o}(e,t))).forEach((e=>{o=Object.assign(Object.assign({},o),e.overrides)})),o}class Ce extends ae{getRenderConfiguration(){return Se(this.getDefaultConfiguration(),this.getConfigurationOverrides(),this.renderContext)}}
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+function Te(e,t,i){return e?t():null==i?void 0:i()}var _e;t([ve({context:fe,subscribe:!0})],Ce.prototype,"renderContext",void 0),e.BookCoverImage=_e=class extends Ce{constructor(){super(...arguments),this.badgeExtension=_e.DEFAULT_BADGE_EXTENSION}getDefaultConfiguration(){return{coverImageHeightPx:266,badgeImageHeightPx:14,badgeMarginSizePx:4}}getConfigurationOverrides(){return[{targeting:{devicetype:"tablet"},overrides:{coverImageHeightPx:210}},{targeting:{devicetype:"mobile"},overrides:{coverImageHeightPx:150,badgeImageHeightPx:10}}]}shouldRenderBadge(){return!!this.badgePhysicalId}getImageUrl(e,t=1){return function(e,t,i="jpg"){return`https://m.media-amazon.com/images/I/${e}._AC_SY${t}.${i}`}(this.coverImagePhysicalId,e*t,"jpg")}getImageSrcSet(e){return`\n            ${this.getImageUrl(e,1)},\n            ${this.getImageUrl(e,1.5)} 1.5x,\n            ${this.getImageUrl(e,2)} 2x,\n            ${this.getImageUrl(e,3)} 3x,\n            ${this.getImageUrl(e,4)} 4x\n        `}getImageRenderHeight(e){const t=this.shouldRenderBadge()?e.badgeImageHeightPx+e.badgeMarginSizePx:0;return e.coverImageHeightPx-t}renderBadge(e){var t,i,o;return this.badgePhysicalId?D`<img
+            style="height: ${e.badgeImageHeightPx}px; margin-bottom: ${e.badgeMarginSizePx}px"
+            class="programBadge"
+            alt="${null!==(t=this.badgeAltText)&&void 0!==t?t:""}"
+            src="${i=this.badgePhysicalId,o=this.badgeExtension||_e.DEFAULT_BADGE_EXTENSION,`https://m.media-amazon.com/images/I/${i}.${o}`}"
+        />`:G}render(){var e;const t=this.getRenderConfiguration(),i=this.getImageRenderHeight(t);return D`<div class="coverImageWrapper" style="height: ${t.coverImageHeightPx}px">
+            ${Te(this.shouldRenderBadge(),(()=>this.renderBadge(t)))}
+            <img
+                srcset="${this.getImageSrcSet(i)}"
+                style="max-height: ${i}px"
+                class="coverImage"
+                alt="${null!==(e=this.coverImageAltText)&&void 0!==e?e:""}"
+            />
+        </div>`}},e.BookCoverImage.styles=xe,e.BookCoverImage.DEFAULT_BADGE_EXTENSION="svg",t([me({type:String})],e.BookCoverImage.prototype,"coverImagePhysicalId",void 0),t([me({type:String})],e.BookCoverImage.prototype,"coverImageAltText",void 0),t([me({type:String})],e.BookCoverImage.prototype,"badgePhysicalId",void 0),t([me({type:String})],e.BookCoverImage.prototype,"badgeAltText",void 0),t([me({type:String})],e.BookCoverImage.prototype,"badgeExtension",void 0),e.BookCoverImage=_e=t([ke("bds-book-cover-image")],e.BookCoverImage);
+/**
+     * @license
+     * Copyright 2018 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+var Ae=e=>null!=e?e:G,we=g`
+    :host {
+        color: var(--bds-color-font-primary);
+        font-size: var(--bds-size-font-base);
+        font-weight: var(--bds-weight-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    a {
+        text-decoration: none;
+    }
+`,Be=g`
+    .sponsored {
+        color: var(--bds-color-font-secondary);
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+
+    .sponsored.mobile {
+        font-size: var(--bds-size-font-small);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .sponsored.tablet {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .icon_info {
+        margin-left: var(--bds-size-spacing-mini);
+    }
+
+    .mobile .icon_info,
+    .tablet .icon_info {
+        display: none;
+    }
+`;e.BookSponsored=class extends ae{constructor(){super(...arguments),this.isSponsored=!1}render(){return Te(this.isSponsored,(()=>{var e;return D`<div class="sponsored ${null===(e=this.renderContext)||void 0===e?void 0:e.devicetype}">
+                    Sponsored
+                    <img
+                        class="icon_info"
+                        alt=""
+                        src="https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/info.svg"
+                    />
+                </div>`}))}},e.BookSponsored.styles=Be,t([me({type:Boolean})],e.BookSponsored.prototype,"isSponsored",void 0),t([ve({context:fe,subscribe:!0})],e.BookSponsored.prototype,"renderContext",void 0),e.BookSponsored=t([ke("bds-book-sponsored")],e.BookSponsored);const Pe=e=>g`
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: ${e};
+        -webkit-box-orient: vertical;
+    `;var ze=g`
+    .desktop,
+    .tablet {
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+
+    .mobile {
+        font-size: var(--bds-size-font-small);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .primaryText,
+    .primaryText a {
+        color: var(--bds-color-font-primary);
+        ${Pe(3)};
+    }
+
+    .desktop .primaryText,
+    .tablet .primaryText {
+        font-size: var(--bds-size-font-medium);
+        line-height: var(--bds-size-line-height-medium);
+    }
+
+    .mobile .primaryText {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .secondaryText,
+    .tertiaryText {
+        color: var(--bds-color-font-secondary);
+
+        ${Pe(1)};
+    }
+
+    .primaryText a {
+        text-decoration: none;
+    }
+
+    .secondaryText a,
+    .tertiaryText a {
+        text-decoration: none;
+        color: var(--bds-color-font-link);
+    }
+
+    .secondaryText a:hover,
+    .tertiaryText a:hover {
+        text-decoration: underline;
+    }
+`;e.BookTitleContent=class extends ae{constructor(){super(...arguments),this.enablePrimaryLink=!1,this.enableSecondaryLink=!1,this.enableTertiaryLink=!1}renderHyperLinks(e,t,i,o=!1){return t?D`<div class="${e}">
+            ${i&&o?D`<a href="${i}">${t}</a>`:D`<span>${t}</span>`}
+        </div>`:G}render(){var e;return D`<div class="${Ae(null===(e=this.renderContext)||void 0===e?void 0:e.devicetype)}">
+            ${this.renderHyperLinks("primaryText",this.primaryText,this.primaryTextUrl,this.enablePrimaryLink)}
+            ${this.renderHyperLinks("secondaryText",this.secondaryText,this.secondaryTextUrl,this.enableSecondaryLink)}
+            ${this.renderHyperLinks("tertiaryText",this.tertiaryText,this.tertiaryTextUrl,this.enableTertiaryLink)}
+        </div> `}},e.BookTitleContent.styles=ze,t([me({type:String})],e.BookTitleContent.prototype,"primaryText",void 0),t([me({type:String})],e.BookTitleContent.prototype,"primaryTextUrl",void 0),t([me({type:Boolean})],e.BookTitleContent.prototype,"enablePrimaryLink",void 0),t([me({type:String})],e.BookTitleContent.prototype,"secondaryText",void 0),t([me({type:String})],e.BookTitleContent.prototype,"secondaryTextUrl",void 0),t([me({type:Boolean})],e.BookTitleContent.prototype,"enableSecondaryLink",void 0),t([me({type:String})],e.BookTitleContent.prototype,"tertiaryText",void 0),t([me({type:String})],e.BookTitleContent.prototype,"tertiaryTextUrl",void 0),t([me({type:Boolean})],e.BookTitleContent.prototype,"enableTertiaryLink",void 0),t([ve({context:fe,subscribe:!0})],e.BookTitleContent.prototype,"renderContext",void 0),e.BookTitleContent=t([ke("bds-book-title-content")],e.BookTitleContent);var Re,Ie=g`
+    .starRating {
+        display: flex;
+        align-items: center;
+        padding-bottom: var(--bds-size-spacing-small);
+        padding-top: var(--bds-size-spacing-small);
+    }
+
+    .mobile {
+        line-height: var(--bds-size-line-height-mini);
+        font-size: var(--bds-size-font-mini);
+    }
+
+    .stars {
+        flex-shrink: 0;
+    }
+
+    .starRatingLink {
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+    }
+
+    .starRatingLink:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--bds-color-font-link);
+    }
+
+    .fullStar,
+    .halfStar,
+    .emptyStar {
+        height: var(--bds-size-icon-star-height-small);
+        width: var(--bds-size-icon-star-width-small);
+    }
+
+    .mobile .fullStar,
+    .mobile .halfStar,
+    .mobile .emptyStar {
+        height: var(--bds-size-icon-star-height-mini);
+        width: var(--bds-size-icon-star-width-mini);
+    }
+
+    .numberOfReviews {
+        color: var(--bds-color-font-secondary);
+        margin-left: var(--bds-size-spacing-mini);
+    }
+
+    .starRatingLink .numberOfReviews {
+        color: var(--bds-color-font-link);
+    }
+`;e.StarRating=Re=class extends ae{renderReviewStarAndCount(){const e=[];for(let t=0;t<this.numberOfStars;t++)e.push(D`<img class="fullStar" alt="" src=${Re.STAR_FULL_ICON_URL} />`);this.hasHalfStar&&e.push(D`<img class="halfStar" alt="" src=${Re.STAR_HALF_ICON_URL} />`);const t=Re.MAX_REVIEW_STARS-this.numberOfStars-(this.hasHalfStar?1:0);for(let i=0;i<t;i++)e.push(D`<img class="emptyStar" alt="" src=${Re.STAR_EMPTY_ICON_URL} />`);return D`
+            <span class="stars" aria-label=${Ae(this.altText)} role="img">${e}</span>
+            <span class="numberOfReviews">${this.numberOfReviews.toLocaleString()}</span>
+        `}render(){return Te(void 0!==this.numberOfReviews&&this.numberOfReviews>0,(()=>{var e;return D`<div class="starRating ${null===(e=this.renderContext)||void 0===e?void 0:e.devicetype}">
+                    ${this.reviewUrl&&this.enableReviewsLink?D`<a href="${this.reviewUrl}" class="starRatingLink">
+                            ${this.renderReviewStarAndCount()}
+                        </a>`:this.renderReviewStarAndCount()}
+                </div>`}))}},e.StarRating.MAX_REVIEW_STARS=5,e.StarRating.STAR_FULL_ICON_URL="https://m.media-amazon.com/images/G/01/Kindle/GenrePage/star.svg",e.StarRating.STAR_HALF_ICON_URL="https://m.media-amazon.com/images/G/01/Kindle/GenrePage/star-half.svg",e.StarRating.STAR_EMPTY_ICON_URL="https://m.media-amazon.com/images/G/01/Kindle/GenrePage/star-empty.svg",e.StarRating.styles=Ie,t([me({type:Number})],e.StarRating.prototype,"numberOfStars",void 0),t([me({type:Boolean})],e.StarRating.prototype,"hasHalfStar",void 0),t([me({type:Number})],e.StarRating.prototype,"numberOfReviews",void 0),t([me({type:String})],e.StarRating.prototype,"reviewUrl",void 0),t([me({type:Boolean})],e.StarRating.prototype,"enableReviewsLink",void 0),t([me({type:String})],e.StarRating.prototype,"altText",void 0),t([ve({context:fe,subscribe:!0})],e.StarRating.prototype,"renderContext",void 0),e.StarRating=Re=t([ke("bds-star-rating")],e.StarRating);var Ee=g`
+    .badge {
+        background-color: var(--bds-color-background-badge);
+        color: var(--bds-color-font-badge);
+        display: inline-block;
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base-plus);
+        margin-bottom: var(--bds-size-spacing-mini);
+        padding: 0 5px;
+        vertical-align: top;
+    }
+
+    .best-seller .badge {
+        background-color: #eb7b13;
+    }
+
+    .best-seller .stylized-edge {
+        border-top-color: #eb7b13;
+    }
+
+    .amazon-charts .badge {
+        background-color: #1b8bd5;
+    }
+
+    .amazon-charts .stylized-edge {
+        border-top-color: #1b8bd5;
+    }
+
+    .amazons-choice .badge {
+        background-color: #002f36;
+    }
+
+    .amazons-choice .stylized-edge {
+        border-top-color: #002f36;
+    }
+
+    .just-released .badge {
+        background-color: #565959;
+    }
+
+    .just-released .stylized-edge {
+        border-top-color: #565959;
+    }
+
+    .stylized-edge {
+        border-top-color: var(--bds-color-background-badge);
+        border-top-width: var(--bds-size-line-height-base-plus);
+        border-top-style: solid;
+        border-right: 9px solid transparent;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .secondaryText {
+        color: #11100f;
+        font-family: var(--bds-font-family-body);
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+`;e.BookMetadataBadge=class extends ae{getColorClass(){switch(this.label){case"Best seller":return"best-seller";case"Amazon Charts":return"amazon-charts";case"Just Released":return"just-released";case"Amazons Choice":return"amazons-choice";default:return""}}render(){return Te(this.label,(()=>D`<div class="${this.getColorClass()}">
+                <span class="badge">${this.label}</span><span class="stylized-edge"></span> ${Te(this.secondaryText,(()=>D`<span class="secondaryText">${this.secondaryText}</span>`))}
+            </div>`))}},e.BookMetadataBadge.styles=Ee,t([me({type:String})],e.BookMetadataBadge.prototype,"label",void 0),t([me({type:String})],e.BookMetadataBadge.prototype,"secondaryText",void 0),e.BookMetadataBadge=t([ke("bds-book-metadata-badge")],e.BookMetadataBadge);var Ue=g`
+    .format {
+        color: var(--bds-color-font-secondary);
+        font-weight: var(--bds-weight-font-base);
+        margin-bottom: var(--bds-size-spacing-mini);
+
+        ${Pe(1)};
+    }
+
+    .format.mobile {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .format.tablet {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .format.desktop {
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+`;e.BookFormat=class extends ae{render(){return Te(this.format,(()=>{var e;return D`<div class="format ${null===(e=this.renderContext)||void 0===e?void 0:e.devicetype}">${this.format}</div>`}))}},e.BookFormat.styles=Ue,t([me({type:String})],e.BookFormat.prototype,"format",void 0),t([ve({context:fe,subscribe:!0})],e.BookFormat.prototype,"renderContext",void 0),e.BookFormat=t([ke("bds-book-format")],e.BookFormat);var Oe=g`
+    .price {
+        color: var(--bds-color-font-secondary);
+        margin-bottom: var(--bds-size-spacing-mini);
+    }
+`;e.BookPrice=class extends ae{render(){return Te(this.price,(()=>D`<div class="price">${this.price}</div>`))}},e.BookPrice.styles=Oe,t([me({type:String})],e.BookPrice.prototype,"price",void 0),e.BookPrice=t([ke("bds-book-price")],e.BookPrice);var Le=g`
+    .points {
+        color: var(--bds-color-font-secondary);
+        margin-bottom: var(--bds-size-spacing-mini);
+        font-weight: var(--bds-weight-font-base);
+
+        ${Pe(1)};
+    }
+
+    .points.mobile {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .points.tablet {
+        font-size: var(--bds-size-font-base);
+        line-height: var(--bds-size-line-height-base);
+    }
+
+    .points.desktop {
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+`;e.BookPoints=class extends ae{render(){return Te(this.points,(()=>{var e;return D`<div class="points ${null===(e=this.renderContext)||void 0===e?void 0:e.devicetype}">${this.points}</div>`}))}},e.BookPoints.styles=Le,t([me({type:String})],e.BookPoints.prototype,"points",void 0),t([ve({context:fe,subscribe:!0})],e.BookPoints.prototype,"renderContext",void 0),e.BookPoints=t([ke("bds-book-points")],e.BookPoints);var Me=g`
+    .formats {
+        color: var(--bds-color-font-secondary);
+        font-weight: var(--bds-weight-font-base);
+        margin-bottom: var(--bds-size-spacing-mini);
+        line-height: var(--bds-size-line-height-base);
+        font-size: var(--bds-size-font-base);
+    }
+
+    .formats.desktop {
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+
+    .formats a {
+        color: var(--bds-color-font-secondary);
+        font-weight: var(--bds-weight-font-base);
+        margin-bottom: var(--bds-size-spacing-mini);
+        line-height: var(--bds-size-line-height-base);
+        font-size: var(--bds-size-font-base);
+    }
+
+    .formats.desktop a{
+        font-size: var(--bds-size-font-base-plus);
+        line-height: var(--bds-size-line-height-base-plus);
+    }
+`;let Fe=class extends ae{render(){var e;if(void 0===this.allFormats||0==this.allFormats.length)return G;let t=[];const i=Math.min(this.allFormats.length,void 0!==this.numFormatsToShow?this.numFormatsToShow:3),o=null===(e=this.renderContext)||void 0===e?void 0:e.devicetype,r="desktop"===o||"default"===o;if(t=[...this.allFormats].splice(0,i).map((e=>r?D`<a class="${o}" href="${e.detailUrl}">
+                ${e.displayString}</a>`:e.displayString)),this.allFormats.length>i){const e=this.allFormats.length-i;r?t.push(D`<a class="${o}" href="${this.detailPage}">
+                        + ${e} more
+                        </a>`):t.push(D`+ ${e} more`)}const s=
+/**
+     * @license
+     * Copyright 2021 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+function*(e,t){var i="function"==typeof t;if(void 0!==e){var o=-1;for(var r of e)o>-1&&(yield i?t(o):t),o++,yield r}}(t,D`<span aria-hidden=true>, </span>`);return r?D`<div class="formats ${o}">
+                Other formats: ${s}
+            </div>`:D`<div class="formats ${o}">
+                Other formats:
+                <a href="${this.detailPage}">
+                    ${s}
+                </a>
+            </div>`}};Fe.styles=Me,t([me({type:String})],Fe.prototype,"detailPage",void 0),t([me({type:Number})],Fe.prototype,"numFormatsToShow",void 0),t([me({type:Array,attribute:!1})],Fe.prototype,"allFormats",void 0),t([ve({context:fe,subscribe:!0})],Fe.prototype,"renderContext",void 0),Fe=t([ke("bds-book-other-formats")],Fe),e.UnifiedBookFaceout=class extends Ce{constructor(){super(...arguments),this.position=0,this.isSponsored=!1,this.hasHalfStar=!1}getDefaultConfiguration(){return{disableBookCoverImage:!1,enableBookFormat:!1,enableBookMetadataBadge:!1,enableBookPoints:!1,enableBookPrice:!1,enableBookSponsored:!1,enableBookFormats:!1,bookTitleContentConfiguration:void 0,starRatingConfiguration:void 0,fontFamilyCSSVariable:"--bds-font-family-body"}}getConfigurationOverrides(){return[{targeting:{marketplace:"AAHKV2X7AFYLW"},overrides:{fontFamilyCSSVariable:"--bds-font-family-china"}},{targeting:{marketplace:"A1VC38T7YXB528"},overrides:{fontFamilyCSSVariable:"--bds-font-family-japan"}},{targeting:{pagetype:"primeReadingStorefront",devicetype:"desktop"},overrides:{bookTitleContentConfiguration:{primaryText:"title",enablePrimaryLink:!0,secondaryText:void 0,enableSecondaryLink:!1,tertiaryText:void 0,enableTertiaryLink:!1},starRatingConfiguration:{enableReviewsLink:!0}}},{targeting:{pagetype:"primeReadingStorefront",devicetype:"mobile",hostapplication:"kindle",operatingsystem:"android"},overrides:{bookTitleContentConfiguration:{primaryText:"author",enablePrimaryLink:!1,secondaryText:void 0,enableSecondaryLink:!1,tertiaryText:void 0,enableTertiaryLink:!1},starRatingConfiguration:{enableReviewsLink:!1}}},{targeting:{pagetype:"multiFormatConfig"},overrides:{bookTitleContentConfiguration:{primaryText:"title",enablePrimaryLink:!0,secondaryText:"author",enableSecondaryLink:!0,tertiaryText:void 0,enableTertiaryLink:!1},starRatingConfiguration:{enableReviewsLink:!0},enableBookFormat:!0,enableBookMetadataBadge:!0,enableBookPoints:!0,enableBookPrice:!0,enableBookSponsored:!1,enableBookFormats:!0}}]}getTitleContentForSlot(e){var t;switch(e){case"title":return{text:this.bookTitle,textUrl:this.detailPageUrl};case"author":return{text:this.bookAuthor,textUrl:null!==(t=this.bookAuthorLinkUrl)&&void 0!==t?t:this.detailPageUrl};default:return}}getTitleContentConfiguration(e){var t,i,o;const r=this.getTitleContentForSlot(null===(t=e.bookTitleContentConfiguration)||void 0===t?void 0:t.primaryText),s=this.getTitleContentForSlot(null===(i=e.bookTitleContentConfiguration)||void 0===i?void 0:i.secondaryText),n=this.getTitleContentForSlot(null===(o=e.bookTitleContentConfiguration)||void 0===o?void 0:o.tertiaryText);return{primaryText:null==r?void 0:r.text,primaryTextUrl:null==r?void 0:r.textUrl,secondaryText:null==s?void 0:s.text,secondaryTextUrl:null==s?void 0:s.textUrl,tertiaryText:null==n?void 0:n.text,tertiaryTextUrl:null==n?void 0:n.textUrl}}renderBookCoverImage(){return D`
+            <bds-book-cover-image
+                coverImagePhysicalId=${this.coverImagePhysicalId}
+                coverImageAltText=${this.coverImageAltText}
+                badgePhysicalId=${Ae(this.badgePhysicalId)}
+                badgeAltText=${Ae(this.badgeAltText)}
+                badgeExtension=${Ae(this.badgeExtension)}
+            >
+            </bds-book-cover-image>
+        `}render(){var e,t;const i=this.getRenderConfiguration(),o=this.asin||this.coverImagePhysicalId;return D`
+            <div
+                data-csa-c-type="widget"
+                data-csa-c-slot-id="bds-ubf-${null===(e=this.renderContext)||void 0===e?void 0:e.pagetype}-${this.position}"
+                data-csa-c-content-id="${o}"
+                cel_widget_id="bds-ubf-${null===(t=this.renderContext)||void 0===t?void 0:t.pagetype}-${this.position}"
+                class="celwidget"
+                style="font-family: var(${i.fontFamilyCSSVariable})"
+            >
+                ${Te(!i.disableBookCoverImage,(()=>this.detailPageUrl?D`<a href="${Ae(this.detailPageUrl)}">
+                              ${this.renderBookCoverImage()}
+                          </a>`:this.renderBookCoverImage()))}
+                ${Te(i.enableBookSponsored,(()=>D`
+                        <bds-book-sponsored ?isSponsored=${this.isSponsored}></bds-book-sponsored>
+                    `))}
+                ${Te(i.bookTitleContentConfiguration,(()=>{var e,t,o;const r=this.getTitleContentConfiguration(i);return D`
+                        <bds-book-title-content
+                            primaryText=${Ae(r.primaryText)}
+                            primaryTextUrl=${Ae(r.primaryTextUrl)}
+                            ?enablePrimaryLink=${null===(e=i.bookTitleContentConfiguration)||void 0===e?void 0:e.enablePrimaryLink}
+                            secondaryText=${Ae(r.secondaryText)}
+                            secondaryTextUrl=${Ae(r.secondaryTextUrl)}
+                            ?enableSecondaryLink=${null===(t=i.bookTitleContentConfiguration)||void 0===t?void 0:t.enableSecondaryLink}
+                            tertiaryText=${Ae(r.tertiaryText)}
+                            tertiaryTextUrl=${Ae(r.tertiaryTextUrl)}
+                            ?enableTertiaryLink=${null===(o=i.bookTitleContentConfiguration)||void 0===o?void 0:o.enableTertiaryLink}
+                        ></bds-book-title-content>
+                    `}))}
+                ${Te(i.starRatingConfiguration,(()=>{var e;return D`
+                        <bds-star-rating
+                            numberOfStars=${Ae(this.numberOfStars)}
+                            ?hasHalfStar=${this.hasHalfStar}
+                            numberOfReviews=${Ae(this.numberOfReviews)}
+                            reviewUrl=${Ae(this.reviewUrl)}
+                            ?enableReviewsLink=${null===(e=i.starRatingConfiguration)||void 0===e?void 0:e.enableReviewsLink}
+                            altText=${Ae(this.starRatingAltText)}
+                        >
+                        </bds-star-rating>
+                    `}))}
+                ${Te(i.enableBookMetadataBadge,(()=>D`
+                        <bds-book-metadata-badge
+                            label=${Ae(this.badgeLabel)}
+                        ></bds-book-metadata-badge>
+                    `))}
+                ${Te(i.enableBookFormat,(()=>D`
+                        <bds-book-format format=${Ae(this.format)}></bds-book-format>
+                    `))}
+                ${Te(i.enableBookPrice,(()=>D` <bds-book-price price=${Ae(this.price)}></bds-book-price> `))}
+                ${Te(i.enableBookPoints,(()=>D`
+                        <bds-book-points points=${Ae(this.points)}></bds-book-points>
+                    `))}
+                ${Te(i.enableBookFormats,(()=>D` <bds-book-other-formats
+                        .allFormats=${Ae(this.formats)}
+                        detailPage=${Ae(this.detailPageUrl)}
+                        numFormatsToShow=${Ae(this.numFormatsToShow)}
+                    ></bds-book-other-formats>`))}
+            </div>
+        `}},e.UnifiedBookFaceout.styles=we,t([me({type:String})],e.UnifiedBookFaceout.prototype,"detailPageUrl",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"asin",void 0),t([me({type:Number})],e.UnifiedBookFaceout.prototype,"position",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"coverImagePhysicalId",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"coverImageAltText",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"badgePhysicalId",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"badgeAltText",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"badgeExtension",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"bookTitle",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"bookAuthor",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"bookAuthorLinkUrl",void 0),t([me({type:Boolean})],e.UnifiedBookFaceout.prototype,"isSponsored",void 0),t([me({type:Number})],e.UnifiedBookFaceout.prototype,"numberOfStars",void 0),t([me({type:Boolean})],e.UnifiedBookFaceout.prototype,"hasHalfStar",void 0),t([me({type:Number})],e.UnifiedBookFaceout.prototype,"numberOfReviews",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"starRatingAltText",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"reviewUrl",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"badgeLabel",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"price",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"points",void 0),t([me({type:String})],e.UnifiedBookFaceout.prototype,"format",void 0),t([me({type:Array})],e.UnifiedBookFaceout.prototype,"formats",void 0),t([me({type:Number})],e.UnifiedBookFaceout.prototype,"numFormatsToShow",void 0),e.UnifiedBookFaceout=t([ke("bds-unified-book-faceout")],e.UnifiedBookFaceout);
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+var Ne=1,He=2,De=e=>function(){for(var t=arguments.length,i=new Array(t),o=0;o<t;o++)i[o]=arguments[o];return{_$litDirective$:e,values:i}};class je{constructor(e){}get _$AU(){return this._$AM._$AU}_$AT(e,t,i){this._$Ct=e,this._$AM=t,this._$Ci=i}_$AS(e,t){return this.update(e,t)}update(e,t){return this.render(...t)}}
+/**
+     * @license
+     * Copyright 2018 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */var Ge=De(class extends je{constructor(e){var t;if(super(e),e.type!==Ne||"class"!==e.name||(null===(t=e.strings)||void 0===t?void 0:t.length)>2)throw Error("`classMap()` can only be used in the `class` attribute and must be the only part in the attribute.")}render(e){return" "+Object.keys(e).filter((t=>e[t])).join(" ")+" "}update(e,t){var i,o,[r]=t;if(void 0===this.it){for(var s in this.it=new Set,void 0!==e.strings&&(this.nt=new Set(e.strings.join(" ").split(/\s/).filter((e=>""!==e)))),r)r[s]&&!(null===(i=this.nt)||void 0===i?void 0:i.has(s))&&this.it.add(s);return this.render(r)}var n=e.element.classList;for(var a in this.it.forEach((e=>{e in r||(n.remove(e),this.it.delete(e))})),r){var l=!!r[a];l===this.it.has(a)||(null===(o=this.nt)||void 0===o?void 0:o.has(a))||(l?(n.add(a),this.it.add(a)):(n.remove(a),this.it.delete(a)))}return j}}),Ve=g`
+    :host {
+        box-sizing: border-box;
+    }
+
+    .tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid;
+        font-size: 14px;
+        font-family: 'Amazon Ember';
+        white-space: nowrap;
+        height: 36px;
+        border-radius: 24px;
+        padding: 6px 16px;
+        box-shadow: 0px 0px 2px 1px rgba(86, 86, 86, 0.1);
+        cursor: pointer;
+    }
+
+    .tag.circular {
+        width: 36px;
+        border-radius: 50%;
+    }
+
+    .selectedIconContainer {
+        max-width: 0;
+    }
+
+    .selectedIconContainer img {
+        max-width: inherit;
+    }
+
+    .selectedIconContainer.visible {
+        max-width: 16px;
+        margin-right: 8px;
+    }
+
+    .selectedIconContainer,
+    .selectedIconContainer.visible {
+        transition: max-width, margin-right;
+        transition-duration: 200ms;
+    }
+
+    @media screen and (prefers-reduced-motion) {
+        .selectedIconContainer,
+        .selectedIconContainer.visible {
+            transition: max-width, margin-right;
+            transition-duration: 0;
+        }
+    }
+
+    .endIconContainer {
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .endIconContainer.dropdown {
+        margin-bottom: 4px;
+    }
+
+    .tagContent {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Per UX team: offset the text by 1px to make it look more centered */
+    .tagText {
+        padding-bottom: 1px;
+    }
+
+    /* Light mode styling */
+    .tag.light {
+        border-color: #a2a6a6;
+        background-color: #fff;
+        color: #0f1111;
+    }
+
+    /* Prevent hover effects from showing up on touch devices after tag deselection */
+    @media (hover: hover) {
+        .tag.light:hover {
+            border-color: #0f1111;
+            box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.2);
+        }
+    }
+
+    .tag.light:focus-visible {
+        outline: none;
+        border: 3px solid #0f1111;
+        box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.2);
+    }
+
+    .tag.light.selected {
+        border: 3px solid #007185;
+        box-shadow: inset 0px 1px 2px 1px rgba(1, 67, 79, 0.1);
+        font-weight: 700;
+    }
+
+    .tag.light.selected:focus-visible {
+        border-color: #0f1111;
+    }
+
+    .tag.light.selected.textBased {
+        background-color: #edfdff;
+    }
+
+    .tag.light.inactive, .tag.light.inactive.textBased {
+        border: 1px solid #bbbfbf;
+        background-color: #f0f2f2;
+        box-shadow: none;
+        color: #565959;
+        font-weight: 400;
+    }
+
+    /* Dark mode styling */
+    .tag.dark {
+        border-color: #d5d9d9;
+        background-color: #0f1111;
+        color: #fff;
+    }
+
+    /* Prevent hover effects from showing up on touch devices after tag deselection */
+    @media (hover: hover) {
+        .tag.dark:hover {
+            border-color: #f7feff;
+            box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.2);
+        }
+    }
+
+    .tag.dark:focus-visible {
+        outline: none;
+        border: 3px solid #f7feff;
+        box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.2);
+    }
+
+    .tag.dark.selected {
+        border: 3px solid #c8f3fa;
+        box-shadow: inset 0px 1px 2px 1px rgba(1, 67, 79, 0.1);
+        font-weight: 700;
+    }
+
+    .tag.dark.selected:focus-visible {
+        border-color: #f7feff;
+    }
+
+    .tag.dark.selected.textBased {
+        background-color: #054b59;
+    }
+
+    .tag.dark.inactive, .tag.dark.inactive.textBased {
+        border: 1px solid #888c8c;
+        background-color: #303333;
+        box-shadow: 0px 0px 2px 1px rgba(86, 86, 86, 0.1);
+        color: #bbbfbf;
+        font-weight: 400;
+    }
+`;e.TagPill=class extends ae{constructor(){super(...arguments),this.tagId="",this.tagName="",this.selectionMode="multi",this.darkMode=!1,this.selected=!1,this.inactive=!1,this.circular=!1,this.noSelectionChange=!1,this.visibilityThreshold=-1,this.prefixIcons=[],this.suffixIcons=[]}get onVisibilityChange(){return this.handleVisibilityChange}set onVisibilityChange(e){this.handleVisibilityChange=e}get onClick(){return this.handleClick}set onClick(e){this.handleClick=e}updated(e){var t;if(e.has("visibilityThreshold")&&this.visibilityThreshold>=0){const e=this.renderRoot.querySelector("button");if(!e)return;null===(t=this.visibilityObserver)||void 0===t||t.unobserve(e),this.visibilityObserver=new IntersectionObserver((e=>{e.forEach((e=>{var t;null===(t=this.handleVisibilityChange)||void 0===t||t.call(this,e.target.id,e.isIntersecting)}))}),{threshold:this.visibilityThreshold}),this.visibilityObserver.observe(e)}}onClickHandler(){var e;this.noSelectionChange||(this.selected=!this.selected);const t={tagId:this.tagId,selected:this.selected};null===(e=this.handleClick)||void 0===e||e.call(this,t)}renderIcons(e){return null==e?void 0:e.map((e=>D`<img src=${e.src} alt=${Ae(e.altText)} aria-hidden=${!e.altText} />`))}renderEndIcon(){let e="";switch(this.endIconType){case"deselect":e=this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/deselect-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/deselect-light.svg";break;case"dropdown":e=this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/dropdown-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/dropdown-light.svg";break;default:return void console.log("The property endIconType has an unexpected value. Please only use one of the valid values choosable in the demo.")}return this.renderIcons([{src:e}])}renderProgramLogo(){let e="";switch(this.programType){case"Kindle Unlimited":case"Kindle Unlimited Eligible":e=this.inactive?this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-dark-inactive.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-light-inactive.svg":this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-light.svg";break;case"Kindle Unlimited Audio":e=this.inactive?this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-audio-dark-inactive.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-audio-light-inactive.svg":this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-audio-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/ku-audio-light.svg";break;case"Prime Reading":case"Prime Eligible":e=this.inactive?this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/prime-dark-inactive.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/prime-light-inactive.svg":this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/prime-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/prime-light.svg";break;case"Comixology":e=this.inactive?this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/comixology-dark-inactive.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/comixology-light-inactive.svg":this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/comixology-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/comixology-light.svg";break;default:return void console.log("The property programType has an unexpected value. Please only use one of the valid values choosable in the demo.")}return this.renderIcons([{src:e,altText:this.tagName}])}render(){const e="multi"===this.selectionMode&&this.selected&&!this.inactive,t={src:this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/selected-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/selected-light.svg"};return D`
+            <button
+                id=${this.tagId}
+                name=${this.tagName}
+                ?disabled=${this.inactive}
+                role=${"multi"===this.selectionMode?"checkbox":"radio"}
+                aria-checked=${this.selected}
+                class=${Ge({tag:!0,light:!this.darkMode,dark:this.darkMode,textBased:!this.programType,selected:this.selected,inactive:this.inactive,circular:this.circular})}
+                @click=${this.onClickHandler}
+            >
+                <div
+                    class=${Ge({selectedIconContainer:!0,visible:e})}
+                >
+                    ${this.renderIcons([t])}
+                </div>
+                <div class="tagContent">
+                    ${this.renderIcons(this.prefixIcons)}
+                    ${Te(this.programType,(()=>this.renderProgramLogo()))}
+                    ${Te(!this.programType&&this.tagName,(()=>D`
+                        <span class="tagText">${this.tagName}</span>
+                    `))}
+                    ${this.renderIcons(this.suffixIcons)}
+                </div>
+                ${Te(this.endIconType,(()=>D`
+                        <div class=${Ge({endIconContainer:!0,dropdown:"dropdown"===this.endIconType})}>
+                            ${this.renderEndIcon()}
+                        </div>
+                    `))}
+            </button>
+        `}},e.TagPill.styles=Ve,t([me()],e.TagPill.prototype,"tagId",void 0),t([me()],e.TagPill.prototype,"tagName",void 0),t([me()],e.TagPill.prototype,"programType",void 0),t([me()],e.TagPill.prototype,"selectionMode",void 0),t([me({type:Boolean})],e.TagPill.prototype,"darkMode",void 0),t([me({type:Boolean})],e.TagPill.prototype,"selected",void 0),t([me({type:Boolean})],e.TagPill.prototype,"inactive",void 0),t([me({type:Boolean})],e.TagPill.prototype,"circular",void 0),t([me()],e.TagPill.prototype,"handleClick",void 0),t([me({type:Boolean})],e.TagPill.prototype,"noSelectionChange",void 0),t([me({type:Number})],e.TagPill.prototype,"visibilityThreshold",void 0),t([me()],e.TagPill.prototype,"handleVisibilityChange",void 0),t([me({type:Array})],e.TagPill.prototype,"prefixIcons",void 0),t([me({type:Array})],e.TagPill.prototype,"suffixIcons",void 0),t([me()],e.TagPill.prototype,"endIconType",void 0),t([me()],e.TagPill.prototype,"onVisibilityChange",null),t([me()],e.TagPill.prototype,"onClick",null),e.TagPill=t([ke("tag-pill")],e.TagPill);var We=g`
+    :host {
+        box-sizing: border-box;
+    }
+
+    .tagsRows {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        row-gap: 12px;
+        overflow-x: scroll;
+
+        /* Hide scroll bar */
+        -ms-overflow-style: none; /* Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* Chrome & Safari */
+    .tagsRows::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tagsRow {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+`;class qe extends ae{constructor(){super(...arguments),this.tags=[],this.selectionMode="multi",this.noSelectionChange=!1,this.darkMode=!1,this.ariaLabel=""}renderTag(e){return D`
+            <tag-pill
+                tagId=${e.id}
+                tagName=${e.name}
+                programType=${Ae(e.programType)}
+                selectionMode=${this.selectionMode}
+                ?darkMode=${this.darkMode}
+                ?noSelectionChange=${this.noSelectionChange}
+                ?selected=${e.selected}
+                ?inactive=${e.inactive}
+                visibilityThreshold=${Ae(this.tagVisibilityThreshold)}
+                .handleClick=${e=>this.onTagClickCallback(e)}
+                .handleVisibilityChange=${this.handleTagVisibilityChange}
+                .prefixIcons=${e.prefixIcons}
+                .suffixIcons=${e.suffixIcons}
+                .endIconType=${e.endIconType}
+            >
+            </tag-pill>
+        `}renderTags(){var e,t;return null!==(t=null===(e=this.tags)||void 0===e?void 0:e.map((e=>this.renderTag(e))))&&void 0!==t?t:G}onTagClickCallback(e){var t;"single"===this.selectionMode&&(this.tags=this.tags.map((t=>Object.assign(Object.assign({},t),{selected:t.id===e.tagId&&e.selected})))),null===(t=this.handleTagClick)||void 0===t||t.call(this,e)}get onTagClick(){return this.handleTagClick}set onTagClick(e){this.handleTagClick=e}get onTagVisibilityChange(){return this.handleTagVisibilityChange}set onTagVisibilityChange(e){this.handleTagVisibilityChange=e}}t([me({type:Array})],qe.prototype,"tags",void 0),t([me()],qe.prototype,"selectionMode",void 0),t([me({type:Boolean})],qe.prototype,"noSelectionChange",void 0),t([me({type:Boolean})],qe.prototype,"darkMode",void 0),t([me()],qe.prototype,"ariaLabel",void 0),t([me()],qe.prototype,"handleTagClick",void 0),t([me({type:Number})],qe.prototype,"tagVisibilityThreshold",void 0),t([me()],qe.prototype,"handleTagVisibilityChange",void 0),t([me()],qe.prototype,"onTagClick",null),t([me()],qe.prototype,"onTagVisibilityChange",null),e.TagsRows=class extends qe{constructor(){super(...arguments),this.numRows=1,this.renderTagsRows=e=>{const t=[];for(let i=0;i<this.numRows;i+=1){const o=e.filter(((e,t)=>t%this.numRows===i)).map((e=>this.renderTag(e)));t.push(D`<div class="tagsRow">${o}</div>`)}return t}}render(){return D`
+            <div
+                class="tagsRows"
+                aria-label=${this.ariaLabel}
+                tabindex="0"
+                role="group"
+            >
+                ${this.renderTagsRows(this.tags)}
+            </div>
+        `}},e.TagsRows.styles=We,t([me({type:Number})],e.TagsRows.prototype,"numRows",void 0),e.TagsRows=t([ke("tags-rows")],e.TagsRows);
+/**
+     * @license
+     * Copyright 2020 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */
+var Ke=(e,t)=>{var i,o,r=e._$AN;if(void 0===r)return!1;for(var s of r)null===(o=(i=s)._$AO)||void 0===o||o.call(i,t,!1),Ke(s,t);return!0},Xe=e=>{var t,i;do{if(void 0===(t=e._$AM))break;(i=t._$AN).delete(e),e=t}while(0===(null==i?void 0:i.size))},Ye=e=>{for(var t;t=e._$AM;e=t){var i=t._$AN;if(void 0===i)t._$AN=i=new Set;else if(i.has(e))break;i.add(e),Ze(t)}};
+/**
+     * @license
+     * Copyright 2017 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */function Je(e){void 0!==this._$AN?(Xe(this),this._$AM=e,Ye(this)):this._$AM=e}function Qe(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,o=this._$AH,r=this._$AN;if(void 0!==r&&0!==r.size)if(t)if(Array.isArray(o))for(var s=i;s<o.length;s++)Ke(o[s],!1),Xe(o[s]);else null!=o&&(Ke(o,!1),Xe(o));else Ke(this,e)}var Ze=e=>{var t,i,o,r;e.type==He&&(null!==(t=(o=e)._$AP)&&void 0!==t||(o._$AP=Qe),null!==(i=(r=e)._$AQ)&&void 0!==i||(r._$AQ=Je))};class et extends je{constructor(){super(...arguments),this._$AN=void 0}_$AT(e,t,i){super._$AT(e,t,i),Ye(this),this.isConnected=e._$AU}_$AO(e){var t,i,o=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e!==this.isConnected&&(this.isConnected=e,e?null===(t=this.reconnected)||void 0===t||t.call(this):null===(i=this.disconnected)||void 0===i||i.call(this)),o&&(Ke(this,e),Xe(this))}setValue(e){if((e=>void 0===e.strings)(this._$Ct))this._$Ct._$AI(e,this);else{var t=[...this._$Ct._$AH];t[this._$Ci]=e,this._$Ct._$AI(t,this,0)}}disconnected(){}reconnected(){}}
+/**
+     * @license
+     * Copyright 2020 Google LLC
+     * SPDX-License-Identifier: BSD-3-Clause
+     */class tt{}var it=new WeakMap,ot=De(class extends et{render(e){return G}update(e,t){var i,[o]=t,r=o!==this.G;return r&&void 0!==this.G&&this.ot(void 0),(r||this.rt!==this.lt)&&(this.G=o,this.ct=null===(i=e.options)||void 0===i?void 0:i.host,this.ot(this.lt=e.element)),G}ot(e){var t;if("function"==typeof this.G){var i=null!==(t=this.ct)&&void 0!==t?t:globalThis,o=it.get(i);void 0===o&&(o=new WeakMap,it.set(i,o)),void 0!==o.get(this.G)&&this.G.call(this.ct,void 0),o.set(this.G,e),void 0!==e&&this.G.call(this.ct,e)}else this.G.value=e}get rt(){var e,t,i;return"function"==typeof this.G?null===(t=it.get(null!==(e=this.ct)&&void 0!==e?e:globalThis))||void 0===t?void 0:t.get(this.G):null===(i=this.G)||void 0===i?void 0:i.value}disconnected(){this.rt===this.lt&&this.ot(void 0)}reconnected(){this.ot(this.lt)}}),rt=g`
+    :host {
+        box-sizing: border-box;
+    }
+
+    .tagsScroller {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .tagsContainer {
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        gap: 8px;
+        padding: 0 46px;
+    }
+
+    .scrollingContent {
+        width: 100%;
+        border-radius: 8px;
+        overflow: scroll;
+        box-sizing: border-box;
+
+        /* Hide scroll bar */
+        -ms-overflow-style: none; /* Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* Chrome & Safari */
+    .scrollingContent::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navArrowContainer {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        position: absolute;
+        display: inline-flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid #d5d9d9;
+        background-color: #fff;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .navArrowContainer.left {
+        left: 0;
+    }
+
+    .navArrowContainer.right {
+        right: 0;
+    }
+
+    .navArrowContainer.dark {
+        border-color: #d5d9d9;
+        background-color: #0f1111;
+    }
+
+    .navArrowContainer.inactive {
+        border-color: #bbbfbf;
+        background-color: #f0f2f2;
+        box-shadow: none;
+    }
+
+    .navArrowContainer.dark.inactive {
+        border-color: #888c8c;
+        background-color: #393939;
+        box-shadow: none;
+    }
+
+    .navArrowContainer:not(.inactive):hover {
+        background-color: #f8f8f8;
+    }
+
+    .navArrowContainer.dark:not(.inactive):hover {
+        background-color: #262828;
+    }
+`;e.TagsScroller=class extends qe{constructor(){super(...arguments),this.scrollingContentRef=new tt,this.BUFFER_WIDTH=1,this.DURATION_FOR_TAG_UPDATE_MS=360,this.scrollPercentage=.75,this.showLeftArrow=!1,this.showRightArrow=!1}updateNavArrows(){const e=this.scrollingContentRef.value;e&&(this.showLeftArrow=e.scrollLeft>0,this.showRightArrow=Math.abs(e.scrollWidth-e.clientWidth-e.scrollLeft)>=this.BUFFER_WIDTH)}firstUpdated(){if(this.updateNavArrows(),this.scrollingContentRef.value){new ResizeObserver((()=>this.updateNavArrows())).observe(this.scrollingContentRef.value)}}scrollContent(e){const t=this.scrollingContentRef.value;if(!t)return;const i=Math.round(t.clientWidth*this.scrollPercentage);"left"===e&&t.scrollTo({left:Math.max(0,t.scrollLeft-i),behavior:"smooth"}),"right"===e&&t.scrollTo({left:Math.min(t.scrollLeft+i,t.scrollWidth-t.clientWidth+this.BUFFER_WIDTH),behavior:"smooth"})}scrollContentTo(e){var t;null===(t=this.scrollingContentRef.value)||void 0===t||t.scrollTo({left:e,behavior:"smooth"})}onTagClickCallback(e){super.onTagClickCallback(e),setTimeout((()=>{this.updateNavArrows()}),this.DURATION_FOR_TAG_UPDATE_MS)}render(){return D`
+            <div class="tagsScroller">
+                <div
+                    class=${Ge({navArrowContainer:!0,left:!0,inactive:!this.showLeftArrow,dark:this.darkMode})}
+                    @click=${()=>this.scrollContent("left")}
+                    aria-hidden="true"
+                >
+                    <img src=${this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/left-arrow-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/left-arrow-light.svg"} role="presentation" />
+                </div>
+                <div
+                    class="scrollingContent"
+                    @scroll=${this.updateNavArrows}
+                    ${ot(this.scrollingContentRef)}
+                >
+                    <div
+                        class="tagsContainer"
+                        role="group"
+                        aria-label=${this.ariaLabel}
+                    >
+                        ${this.renderTags()}
+                    </div>
+                </div>
+                <div
+                    class=${Ge({navArrowContainer:!0,right:!0,inactive:!this.showRightArrow,dark:this.darkMode})}
+                    @click=${()=>this.scrollContent("right")}
+                    aria-hidden="true"
+                >
+                    <img src=${this.darkMode?"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/right-arrow-dark.svg":"https://m.media-amazon.com/images/G/01/Books/BooksDesignSystem/right-arrow-light.svg"} role="presentation" />
+                </div>
+            </div>
+        `}},e.TagsScroller.styles=rt,t([me({type:Number})],e.TagsScroller.prototype,"scrollPercentage",void 0),t([ye()],e.TagsScroller.prototype,"showLeftArrow",void 0),t([ye()],e.TagsScroller.prototype,"showRightArrow",void 0),e.TagsScroller=t([ke("tags-scroller")],e.TagsScroller);var st=g`
+    :host {
+        box-sizing: border-box;
+    }
+
+    .tagFiltersSection {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: 'Amazon Ember';
+        color: #0f1111;
+    }
+
+    .header {
+        margin-left: 3px;
+        font-weight: 700;
+        color: var(--bds-color-font-primary);
+    }
+
+    .header.main {
+        font-size: 22px;
+    }
+
+    .header.secondary {
+        font-size: 18px;
+    }
+
+    .tagsContainer {
+        display: inline-flex;
+        flex-wrap: wrap;
+        row-gap: 12px;
+        column-gap: 8px;
+    }
+`;e.TagFiltersSection=class extends qe{constructor(){super(...arguments),this.header="",this.headerSize="main"}render(){return D`
+            <div class="tagFiltersSection">
+                ${Te(this.header&&this.headerSize,(()=>D`
+                        <div
+                            class=${Ge({header:!0,main:"main"===this.headerSize,secondary:"secondary"===this.headerSize})}
+                            role="heading"
+                        >
+                            ${this.header}
+                        </div>
+                    `))}
+                <div
+                    class="tagsContainer"
+                    aria-label=${this.ariaLabel}
+                    tabindex="0"
+                    role="group"
+                >
+                    ${this.renderTags()}
+                </div>
+            </div>
+        `}},e.TagFiltersSection.styles=st,t([me()],e.TagFiltersSection.prototype,"header",void 0),t([me()],e.TagFiltersSection.prototype,"headerSize",void 0),e.TagFiltersSection=t([ke("tag-filters-section")],e.TagFiltersSection),Object.defineProperty(e,"__esModule",{value:!0})}({});
+/////////////////////////
+// END FILE bds-base-assets.js
+/////////////////////////
+
+// END ASSET BooksDesignSystemWebBuzzAssets@BaseAssets-1.0.244.0
+////////////////////////////////////////////

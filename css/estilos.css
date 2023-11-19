@@ -173,13 +173,6 @@ main {
 
 
 
-.caixa-email {
-    width: 700px;
-    border: 1px solid var(--cor-das-bordas);
-    margin-left: 600px;
-    margin-top: 50px;
-}
-
 @keyframes gradient-animation {
 	0% {
 		background-position: 0% 50%;

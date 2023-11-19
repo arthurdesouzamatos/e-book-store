@@ -119,11 +119,34 @@
     font-size: larger;
 }
 
+.link_ver-mais {
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    height: 30px;
+    text-decoration: none ;
+    color: #ffff;
+    font-weight: bold;
+    font-family: var(--fonte-um);
+    border: 1px solid #ffff;
+    font-size: larger;
+}
+
 .link_ver-tudo:hover {
     text-decoration: none;
 }
 
+.link_ver-mais:hover {
+    text-decoration: none;
+}
+
 .link_ver-tudo:hover {
+    background-color: var(--night-blue-4);
+    border: 1px solid gold;
+    color: gold;
+}
+
+.link_ver-mais:hover {
     background-color: var(--night-blue-4);
     border: 1px solid gold;
     color: gold;
